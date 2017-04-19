@@ -1,0 +1,117 @@
+.container {
+  min-height: 100vh;
+  max-width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 0.5%;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50vh;
+}
+
+.row:first-of-type {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.circle {
+  background-image: url(IsmailArafe.jpg);
+  margin: 0.5em;
+  border: 1px solid transparent;
+  box-shadow: 1px 1px 1 100px;
+  box-sizing: content-box;
+  -ms-flex-preferred-size: 30%;
+  flex-basis: 30%;
+  opacity: 0.83;
+  border-radius: 50%;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -ms-flex-item-align: stretch;
+  -ms-grid-row-align: stretch;
+  align-self: stretch;
+}
+
+p {
+  font-size: 5rem;
+  font-weight: 300;
+  color: #ddd;
+  opacity: 0.9;
+  padding: 2%;
+  line-height: 1.2em;
+  letter-spacing: -0.075em;
+}
+
+p span {
+  background: hsla(212, 45%, 70%);
+  padding: 1%;
+  border-radius: 3px;
+}
+
+.social {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  -ms-flex-preferred-size: 30%;
+  flex-basis: 34%;
+}
+
+.social li {
+  margin: 0;
+  -ms-flex-preferred-size: 25%;
+  flex-basis: 25%;
+}
+
+svg {
+  opacity: 0.64;
+}
+
+iframe {
+  -ms-flex-preferred-size: 33.333333%;
+  flex-basis: 33.333333%;
+  padding: 0.5%;
+  border-radius: 5px;
+}
+
+.mess {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.songs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+}
+
+.mess {
+  visibility: visible;
+  padding: 1%;
+}
+
+.songs iframe {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+}

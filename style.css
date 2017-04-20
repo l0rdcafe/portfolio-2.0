@@ -1,6 +1,56 @@
-.container {
+.main-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
   min-height: 100vh;
   max-width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1%;
+}
+
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-preferred-size: 70%;
+  flex-basis: 70%;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+
+.flex-row2 {
+  -ms-flex-preferred-size: 30%;
+  flex-basis: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+}
+
+.flex-row2 img {
+  border-radius: 50%;
+  min-height: 360px;
+  max-width: 360px;
+  -webkit-transform: scale(0.75, 0.75);
+  transform: scale(0.75, 0.75);
+}
+
+.flex-row2 p {
+  color: #ddd;
+  text-align: center;
+  padding: 0 15%;
+  letter-spacing: -0.0025em;
+  line-height: 1.6em;
+  font-size: 17px;
+}
+
+.flex-row2 .about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8,41 +58,13 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 0.5%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-.row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 50vh;
-}
-
-.row:first-of-type {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.circle {
-  background-image: url(IsmailArafe.jpg);
-  margin: 0.5em;
-  border: 1px solid transparent;
-  box-shadow: 1px 1px 1 100px;
-  box-sizing: content-box;
-  -ms-flex-preferred-size: 30%;
-  flex-basis: 30%;
-  opacity: 0.83;
-  border-radius: 50%;
-  background-position: 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  -ms-flex-item-align: stretch;
-  -ms-grid-row-align: stretch;
-  align-self: stretch;
-}
-
-p {
+.blurb {
   font-size: 5rem;
   font-weight: 300;
   color: #ddd;
@@ -50,42 +72,58 @@ p {
   padding: 2%;
   line-height: 1.2em;
   letter-spacing: -0.075em;
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 100%;
 }
 
-p span {
+.blurb span {
   background: hsla(212, 45%, 70%);
   padding: 1%;
   border-radius: 3px;
 }
 
-.social {
+.about .social {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
-  -ms-flex-preferred-size: 30%;
-  flex-basis: 34%;
+  margin: 0;
+  padding: 0 9%;
 }
 
 .social li {
   margin: 0;
   -ms-flex-preferred-size: 25%;
   flex-basis: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border: 0.1px solid rgba(255, 255, 255, 0.1);
+  background: hsla(212, 70%, 70%);
+  border-radius: 2px;
 }
 
-svg {
-  opacity: 0.64;
+.social li:hover {
+  background: hsla(212, 100%, 60%);
+  border: 0.5px solid #aaa;
 }
 
-iframe {
-  -ms-flex-preferred-size: 33.333333%;
-  flex-basis: 33.333333%;
-  padding: 0.5%;
-  border-radius: 5px;
+.social svg {
+  opacity: 0.5;
+  -webkit-transform: scale(0.4, 0.4);
+  transform: scale(0.4, 0.4);
+  -webkit-transition: all;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.social li:hover svg {
+  opacity: 1;
+}
+
+.mess iframe {
+  border-radius: 2px;
 }
 
 .mess {
@@ -102,13 +140,6 @@ iframe {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-preferred-size: 100%;
-  flex-basis: 100%;
-}
-
-.mess {
-  visibility: visible;
-  padding: 1%;
 }
 
 .songs iframe {

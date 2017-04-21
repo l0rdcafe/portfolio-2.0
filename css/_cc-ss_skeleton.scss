@@ -24,16 +24,20 @@
 - Media Queries
 */
 
-@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500');
+@import 'cc-ss_colors';
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700|Quicksand:300,400');
+
+$primary-color: $l0rd-green;
+$secondary-color: $maroon;
+$primary-text-color: $black;
+$secondary-text-color: $white;
+$base-font: "Lato", sans-serif;
+$heading-font: "Quicksand", sans-serif;
 
 .container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  position: relative;
   width: 100%;
-  max-width: 100vw;
-  min-height: 100vh;
+  max-width: 960px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
@@ -46,14 +50,14 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 400px) {
+@media (min-width: 400px) {
   .container {
     width: 85%;
     padding: 0;
   }
 }
 
-@media (max-width: 550px) {
+@media (min-width: 550px) {
   .container {
     width: 80%;
   }
@@ -209,8 +213,8 @@ body {
   font-size: 1.5em;
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Quicksand", sans-serif;
-  color: #222;
+  font-family: $base-font;
+  color: $primary-text-color;
 }
 
 h1,
@@ -222,6 +226,8 @@ h6 {
   margin-top: 0;
   margin-bottom: 2rem;
   font-weight: 300;
+  font-family: $heading-font;
+  color: $primary-color;
 }
 
 h1 {
@@ -260,7 +266,7 @@ h6 {
   letter-spacing: 0;
 }
 
-@media (max-width: 550px) {
+@media (min-width: 550px) {
   h1 {
     font-size: 5rem;
   }
@@ -288,14 +294,15 @@ h6 {
 
 p {
   margin-top: 0;
+  font-family: $base-font;
 }
 
 a {
-  color: #1eaedb;
+  color: $primary-color;
 }
 
 a:hover {
-  color: #0fa0ce;
+  color: darken($primary-color, 65%);
 }
 
 .button,
@@ -306,7 +313,7 @@ input[type="button"] {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
-  color: #555;
+  color: $primary-color;
   text-align: center;
   font-size: 11px;
   font-weight: 600;
@@ -317,7 +324,7 @@ input[type="button"] {
   white-space: nowrap;
   background-color: transparent;
   border-radius: 4px;
-  border: 1px solid $silver;
+  border: 1px solid $primary-color;
   cursor: pointer;
   box-sizing: border-box;
 }
@@ -332,8 +339,8 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  color: #333;
-  border-color: $gray;
+  color: lighten($primary-color, 10%);
+  border-color: lighten($primary-color, 10%);
   outline: 0;
 }
 
@@ -349,7 +356,7 @@ select {
   height: 38px;
   padding: 6px 10px;
   background-color: $white;
-  border: 1px solid $silver;
+  border: 1px solid $primary-color;
   border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box;
@@ -383,7 +390,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid $aqua;
+  border: 1px solid $primary-color;
   outline: 0;
 }
 
@@ -441,8 +448,8 @@ code {
   margin: 0 0.2rem;
   font-size: 90%;
   white-space: nowrap;
-  background: $white;
-  border: 1px solid $silver;
+  background: $silver;
+  border: 1px solid darken(silver, 5%);
   border-radius: 4px;
 }
 
@@ -456,7 +463,7 @@ th,
 td {
   padding: 12px 15px;
   text-align: left;
-  border-bottom: 1px solid $silver;
+  border-bottom: 1px solid $primary-color;
 }
 
 th:first-child,

@@ -38,117 +38,113 @@ $white: #fff;
 $silver: #ddd;
 $gray: #aaa;
 $black: #111;
+$l0rd-green: $olive;
 
 /* Gradients */
 
 .grad-navy-blue {
   background: -webkit-linear-gradient(-180deg, $navy, $blue);
-  background: -webkit-linear-gradient(right, $navy, $blue);
   background: -webkit-linear-gradient(top, $navy, $blue);
   background: linear-gradient(-180deg, $navy, $blue);
 }
 
 .grad-blue-aqua {
   background: -webkit-linear-gradient(-180deg, $blue, $aqua);
-  background: -webkit-linear-gradient(right, $blue, $aqua);
   background: -webkit-linear-gradient(top, $blue, $aqua);
   background: linear-gradient(-180deg, $blue, $aqua);
 }
 
 .grad-aqua-teal {
   background: -webkit-linear-gradient(-180deg, $aqua, $teal);
-  background: -webkit-linear-gradient(right, $aqua, $teal);
   background: -webkit-linear-gradient(top, $aqua, $teal);
   background: linear-gradient(-180deg, $aqua, $teal);
 }
 
 .grad-teal-olive {
   background: -webkit-linear-gradient(-180deg, $teal, $olive);
-  background: -webkit-linear-gradient(right, $teal, $olive);
   background: -webkit-linear-gradient(top, $teal, $olive);
   background: linear-gradient(-180deg, $teal, $olive);
 }
 
 .grad-olive-green {
   background: -webkit-linear-gradient(-180deg, $olive, $green);
-  background: -webkit-linear-gradient(right, $olive, $green);
   background: -webkit-linear-gradient(top, $olive, $green);
   background: linear-gradient(-180deg, $olive, $green);
 }
 
 .grad-green-lime {
   background: -webkit-linear-gradient(-180deg, $green, $lime);
-  background: -webkit-linear-gradient(right, $green, $lime);
   background: -webkit-linear-gradient(top, $green, $lime);
   background: linear-gradient(-180deg, $green, $lime);
 }
 
 .grad-lime-yellow {
   background: -webkit-linear-gradient(-180deg, $lime, $yellow);
-  background: -webkit-linear-gradient(right, $lime, $yellow);
   background: -webkit-linear-gradient(top, $lime, $yellow);
   background: linear-gradient(-180deg, $lime, $yellow);
 }
 
 .grad-yellow-orange {
   background: -webkit-linear-gradient(-180deg, $yellow, $orange);
-  background: -webkit-linear-gradient(right, $yellow, $orange);
   background: -webkit-linear-gradient(top, $yellow, $orange);
   background: linear-gradient(-180deg, $yellow, $orange);
 }
 
 .grad-orange-red {
   background: -webkit-linear-gradient(-180deg, $orange, $red);
-  background: -webkit-linear-gradient(right, $orange, $red);
   background: -webkit-linear-gradient(top, $orange, $red);
   background: linear-gradient(-180deg, $orange, $red);
 }
 
 .grad-red-fuchsia {
   background: -webkit-linear-gradient(-180deg, $red, $fuchsia);
-  background: -webkit-linear-gradient(right, $red, $fuchsia);
   background: -webkit-linear-gradient(top, $red, $fuchsia);
   background: linear-gradient(-180deg, $red, $fuchsia);
 }
 
 .grad-fuchsia-purple {
   background: -webkit-linear-gradient(-180deg, $fuchsia, $purple);
-  background: -webkit-linear-gradient(right, $fuchsia, $purple);
   background: -webkit-linear-gradient(top, $fuchsia, $purple);
   background: linear-gradient(-180deg, $fuchsia, $purple);
 }
 
 .grad-purple-maroon {
   background: -webkit-linear-gradient(-180deg, $purple, $maroon);
-  background: -webkit-linear-gradient(right, $purple, $maroon);
   background: -webkit-linear-gradient(top, $purple, $maroon);
   background: linear-gradient(-180deg, $purple, $maroon);
 }
 
 .grad-maroon-white {
   background: -webkit-linear-gradient(-180deg, $maroon, $white);
-  background: -webkit-linear-gradient(right, $maroon, $white);
   background: -webkit-linear-gradient(top, $maroon, $white);
   background: linear-gradient(-180deg, $maroon, $white);
 }
 
 .grad-white-gray {
   background: -webkit-linear-gradient(-180deg, $white, $gray);
-  background: -webkit-linear-gradient(right, $white, $gray);
   background: -webkit-linear-gradient(top, $white, $gray);
   background: linear-gradient(-180deg, $white, $gray);
 }
 
 .grad-gray-silver {
   background: -webkit-linear-gradient(-180deg, $gray, $silver);
-  background: -webkit-linear-gradient(right, $gray, $silver);
   background: -webkit-linear-gradient(top, $gray, $silver);
   background: linear-gradient(-180deg, $gray, $silver);
 }
 
 .grad-silver-black {
   background: -webkit-linear-gradient(-180deg, $silver, $black);
-  background: -webkit-linear-gradient(right, $silver, $black);
   background: -webkit-linear-gradient(top, $silver, $black);
   background: linear-gradient(-180deg, $silver, $black);
+}
+
+.grad-silver-white {
+  background: -webkit-linear-gradient(top, $silver, $white);
+  background: linear-gradient(-180deg, $silver, $white);
+}
+
+.grad-l0rd-green {
+  background: -webkit-linear-gradient(top, $l0rd-green, $green);
+  background: -webkit-linear-gradient(top, $l0rd-green, $lime);
+  background: linear-gradient(-180deg, $l0rd-green, $green);
 }

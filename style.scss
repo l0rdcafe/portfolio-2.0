@@ -5,8 +5,8 @@ $clear: 1;
 $minvh: 100vh;
 $break-small: 360px;
 $break-medium: 467px;
-$break-mezzo: 468px;
-$break-large: 639px;
+$break-mezzo: 640px;
+$break-large: 767px;
 $break-lrg: 768px;
 
 .main-container {
@@ -77,7 +77,7 @@ $break-lrg: 768px;
     padding: 4%;
 
     @media (min-width: $break-small) and (max-width: $break-large) {
-      position: static;
+      position: relative;
       width: 100%;
       padding: 0;
     }

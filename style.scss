@@ -53,8 +53,8 @@ $break-lrg: 768px;
   font-size: 1.5rem;
 
   @media (min-width: $break-small) and (max-width: $break-large) {
-    display: block;
     width: 100%;
+    display: block;
   }
 
   @media (min-width: $break-lrg) {
@@ -120,8 +120,6 @@ $break-lrg: 768px;
 
   @media (min-width: $break-small) and (max-width: $break-large) {
     display: block;
-    -ms-flex-preferred-size: 80%;
-    flex-basis: 80%;
     margin: 5%;
   }
 

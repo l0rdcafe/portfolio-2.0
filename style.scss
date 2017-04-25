@@ -6,7 +6,7 @@ $minvh: 100vh;
 $break-small: 360px;
 $break-medium: 467px;
 $break-mezzo: 468px;
-$break-large: 767px;
+$break-large: 639px;
 $break-lrg: 768px;
 
 .main-container {
@@ -96,8 +96,6 @@ $break-lrg: 768px;
     height: 342px;
     margin: 2%;
     margin-top: 3%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
   }
 }
 

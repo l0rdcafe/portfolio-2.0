@@ -96,6 +96,8 @@ $break-lrg: 768px;
     height: 342px;
     margin: 2%;
     margin-top: 3%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
   }
 }
 

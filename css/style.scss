@@ -133,8 +133,8 @@ $space: 2em;
 
   @media (min-width: $break-lrg) {
     -webkit-box-flex: 1;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
+    -ms-flex: 1 1 70%;
+    flex: 1 1 70%;
   }
 
   a {

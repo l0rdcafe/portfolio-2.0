@@ -265,7 +265,7 @@ $space: 2em;
 
   img {
     width: 10%;
-    height: 70px;
+    height: 3.5em;
   }
 }
 
@@ -305,6 +305,94 @@ $space: 2em;
     @media (min-width: $break-lrg) {
       padding: 5%;
     }
+  }
+}
+
+.thoughts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-weight: 300;
+  line-height: 1.3em;
+  letter-spacing: 0.005em;
+
+  img {
+    max-width: 84%;
+    padding: 4%;
+  }
+
+  .node {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    margin-bottom: 1em;
+    max-height: 50vh;
+  }
+
+  .lntr {
+    text-align: left;
+    width: 40%;
+    padding: 4%;
+    margin-bottom: 1em;
+  }
+
+  ol {
+    text-align: left;
+    margin-left: 1.5%;
+    list-style: none;
+
+    i {
+      color: $secondary-color;
+      -webkit-transition: all 0.25s;
+      transition: all 0.25s;
+
+      &:hover {
+        color: lighten($secondary-color, 20%);
+      }
+    }
+
+    a {
+      margin-left: 1.5%;
+    }
+  }
+
+  h3 {
+    margin-top: 1em;
+  }
+
+  .hacker {
+    font-weight: 500;
+    color: $maroon;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+
+    &:hover {
+      color: lighten($maroon, 30%);
+    }
+  }
+
+  a {
+    font-weight: 500;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+
+    &:hover {
+      color: $maroon;
+    }
+  }
+
+  small {
+    opacity: 0.7;
+    font-size: 70%;
+    text-align: right;
+    font-weight: 500;
+    margin-right: 1.5%;
+    color: $maroon;
+    padding: 1em 0;
   }
 }
 

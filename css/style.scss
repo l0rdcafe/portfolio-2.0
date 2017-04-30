@@ -181,6 +181,9 @@ $space: 2em;
   font-weight: 300;
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 
   &:hover {
     color: lighten($secondary-color, 40%);

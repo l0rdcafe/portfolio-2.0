@@ -85,6 +85,10 @@ body {
     padding-bottom: 0;
   }
 
+  .title {
+    margin-top: 1.5rem;
+  }
+
   .l-wrapper-nav {
     width: 100%;
     padding: 2%;
@@ -184,6 +188,37 @@ body {
   .l-songs,
   .l-tit {
     margin-top: 2em;
+  }
+
+  h2 .up,
+  h2 .down {
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: 700ms;
+    transition: 700ms;
+  }
+
+  h2 .up {
+    -webkit-transform: translateZ(0) translateY(-6rem);
+    transform: translateZ(0) translateY(-6rem);
+  }
+
+  h2 .down {
+    -webkit-transform: translateZ(0) translateY(6rem);
+    transform: translateZ(0) translateY(6rem);
+  }
+
+  h2:hover .up,
+  h2:hover .down {
+    opacity: 1;
+    -webkit-transition: -webkit-transform 1200ms opacity 800ms;
+    transition: -webkit-transform 1200ms opacity 800ms;
+    transition: transform 1200ms opacity 800ms;
+    transition: transform 1200ms opacity 800ms, -webkit-transform 1200ms opacity 800ms;
+    -webkit-transform: translateZ(0) translateY(0);
+    transform: translateZ(0) translateY(0);
+    -webkit-transition-delay: 800ms, 400ms;
+    transition-delay: 800ms, 400ms;
   }
 
   @media (min-width: $break-lrg) {

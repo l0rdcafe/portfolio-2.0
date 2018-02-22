@@ -12,17 +12,16 @@
 </head>
 
 <body>
-  <div class="l-main-container">
-
-    <div class="l-flex-side" id="flex-side">
-      <div class="wrapper-nav l-wrapper-nav">
-        <h1 class="title animated tada">👑 <img src="assets/l0rdcafe.jpg" class="cafe"> 👑</h1>
+  <div class="main">
+    <div class="main__nav" id="nav">
+      <div class="main__nav__wrapper">
+        <h1 class="main__nav__wrapper__header animated tada">👑 <img src="assets/l0rdcafe.jpg" class="main__nav__wrapper__logo"> 👑</h1>
         <img src="assets/l0rd.jpg">
-        <div class="about l-about">
-          <p>Ismail Arafa is a junior <a class="dev" href="#projects">web developer 💻</a>, <a href="#music">accomplished musician 🎼</a>, and huge <a href="#cheese">cheese 🧀 fiend</a>.<br><small>Based in Toronto, Canada </small>
-            <span class="maple">🍁</span>
+        <div>
+          <p>Ismail Arafa is a junior <a href="#projects">web developer 💻</a>, <a href="#music">accomplished musician 🎼</a>, and huge <a href="#cheese">cheese 🧀 fiend</a>.<br><small>Based in Toronto, Canada </small>
+            <span class="main__nav__wrapper__span">🍁</span>
           </p>
-          <ul class="social l-social">
+          <ul class="main__nav__wrapper__list">
             <li><a href="mailto:me@l0rdcafe.com"><i class="fa fa-envelope-o fa-lg"></i>
                         </a></li>
             <li><a href="https://twitter.com/l0rdcafe" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
@@ -33,17 +32,17 @@
         </div>
       </div>
     </div>
-    <div class="flex-main l-flex-main">
-      <div class="blurb l-blurb">
-        <h2><span class="up">🐪</span> Story <span class="down">🇪🇬</span> <span class="up">🇨🇦</span></h2>
+    <div class="main__body">
+      <div class="main__body__section">
+        <h2><span class="main__body__section__icon--up">🐪</span> Story <span class="main__body__section__icon--down">🇪🇬</span> <span class="main__body__section__icon--up">🇨🇦</span></h2>
         <p>Originally a desert dweller, <a href="mailto:me@l0rdcafe.com" class="l0rd">l0rdcafé</a> stumbled upon the art of coding one day and, eager to learn more, he traversed the Atlantic Ocean 🌊 through a combination of camel back riding, telekinesis
           and sheer willpower.</p>
 
-        <div class="camel"><img src="assets/camel.gif"></div>
-        <p class="blurb l-blurb">After an arduous and tasking journey, he finally made his way to Canadian shores where he would pursue his passions for <a href="#cheese" class="l0rd">melting cheese</a> and crafting a myriad of web creations.</p>
+        <div class="main__body__section__gifWrapper"><img src="assets/camel.gif"></div>
+        <p>After an arduous and tasking journey, he finally made his way to Canadian shores where he would pursue his passions for <a href="#cheese" class="l0rd">melting cheese</a> and crafting a myriad of web creations.</p>
       </div>
-      <div class="projects l-projects" id="projects">
-        <h2><span class="down">💾</span> Projects <span class="up">💾</span></h2>
+      <div class="main__body__section" id="projects">
+        <h2><span class="main__body__section__icon--down">💾</span> Projects <span class="main__body__section__icon--up">💾</span></h2>
         <h3 id="2-do">2-Do List</h3>
         <p>I am very excited to share with you my first web application! As underwhelming as a <a href="https://l0rdcafe.github.io/todo-lst/" target="_blank">2-Do List</a> might feel, I try to always remember that almost <strong>90%</strong> of all web applications
           has some sort of <a href="https://l0rdcafe.github.io/todo-lst/" target="_blank">2-Do List</a> at its base.</p>
@@ -51,10 +50,10 @@
         <p>As you can see in the picture above, this is how the <a href="https://l0rdcafe.github.io/todo-lst/" target="_blank">2-Do List</a> looks when filled out with some of the states of the items altered.</p>
         <img src="assets/edit.png">
         <p>Additionally, you can edit an entry and also its date simply by clicking on the edit button, and then saving the change(s) by clicking the save button.</p>
-        <p>If you haven't checked it out yet, here's the link for the <a href="https://l0rdcafe.github.io/todo-lst/" target="_blank">2-Do List,</a> and for those <span class="hacker">Vanilla JavaScript hackers,</span> here's a link to the <a href="https://github.com/l0rdcafe/todo-lst"
+        <p>If you haven't checked it out yet, here's the link for the <a href="https://l0rdcafe.github.io/todo-lst/" target="_blank">2-Do List,</a> and for those <span class="main__body__section__span">Vanilla JavaScript hackers,</span> here's a link to the <a href="https://github.com/l0rdcafe/todo-lst"
             target="_blank">master repo.</a></p>
         <small>June 1, 2017</small>
-        <h3 id="uber"><img src="assets/uberlogo.jpg" class="u-logo"></h3>
+        <h3 id="uber"><img src="assets/uberlogo.jpg" class="main__body__section__logo"></h3>
         <p>Welcome to my first project! This was built in <strong>Sketch</strong> shortly after learning the basic skills of design. The project was a website for a fictional app that eradicates your bureaucratic nightmares. There are four different device-sizes
           where the design was adjusted to fit within said devices, for the full <strong>PDF</strong> click <a href="assets/ubereaucracy.pdf" target="_blank">here.</a></p>
         <img src="assets/main.jpg">
@@ -63,25 +62,25 @@
         <p>The main logo for the app is as shown above, I simply masked an image of an eagle in three different rounded rectangle masks for the wings and the head respectively, and used the U from the company name in the middle of the logo.</p>
         <img src="assets/320.jpg">
         <p>This last picture shows the 320px device width design. The main section is similar to the 600px artboard, however, the content is centered and more vertical.</p>
-        <small>May 8, 2017</small>
         <p>For more, check out <a href="https://github.com/l0rdcafe" target="_blank">GitHub.</a></p>
+        <small>May 8, 2017</small>
       </div>
-      <div class="music l-music" id="music">
-        <h2><span class="down">🎼 🎸</span> Music <span class="up">🍺 🎙</span>️</h2>
+      <div class="main__body__section">
+        <h2 id="music"><span class="main__body__section__icon--down">🎼 🎸</span> Music <span class="main__body__section__icon--up">🍺 🎙</span>️</h2>
         <h4>🍺 Live</h4>
         <iframe width="80%" height="415" src="https://www.youtube.com/embed/xNztF5wGrT8" frameborder="0" allowfullscreen></iframe>
-        <h3 class="eps">EPs 🎼</h3>
-        <div class="songs l-songs">
-          <h4 class="sing">عزيزي فادي - "Dear Fady" (2014) 🎙️</h4><iframe scrolling="no" width="50%" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/137851268&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-          <h4 class="sing">إندي جامد - "Heavy Indie" (2014) 🎙️</h4>
+        <h3 class="main__body__section">EPs 🎼</h3>
+        <div class="main__body__section__media">
+          <h4 class="main__body__section__media__title">عزيزي فادي - "Dear Fady" (2014) 🎙️</h4><iframe scrolling="no" width="50%" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/137851268&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+          <h4 class="main__body__section__media__title">إندي جامد - "Heavy Indie" (2014) 🎙️</h4>
           <iframe scrolling="no" width="50%" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/171710141&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true">
                         </iframe>
         </div>
       </div>
-      <div class="thoughts l-thoughts" id="blog">
-        <h2><span class="down">🤔</span> Thoughts <span class="up">🤔</span></h2>
+      <div class="main__body__section--content" id="blog">
+        <h2><span class="main__body__section__icon--down">🤔</span> Thoughts <span class="main__body__section__icon--up">🤔</span></h2>
         <h3 id="js">💭 Programming With JavaScript: Or How I Learned to Stop Worrying And Love The Debugger 💭</h3>
-        <span id="js-txt"><p>Hey <span class="hacker">hacker friends!</span><br>Ur fam; <a href="mailto:me@l0rdcafe.com">l0rdcafe</a> here. This installment is about <strong>JavaScript</strong>, or in other words my first foray into proper programming.</p>
+        <span id="js-txt"><p>Hey <span class="main__body__content__span">hacker friends!</span><br>Ur fam; <a href="mailto:me@l0rdcafe.com">l0rdcafe</a> here. This installment is about <strong>JavaScript</strong>, or in other words my first foray into proper programming.</p>
         <p>Two weeks ago, I had little to no programming experience whatsoever. I’d read a few tutorials and seen some <strong>JavaScript</strong> syntax, enough to scare me away from programming for browsers. However, I decided it was time to face my fears
           and program for the web.</p>
         <p>I started off by reading and doing the <a href="http://asmarterwaytolearn.com/js/index-of-exercises.html" target="_blank">exercises</a> for <a href="http://www.asmarterwaytolearn.com/" target="_blank">A Smarter Way To Learn: JavaScript by Mark Myers</a>;
@@ -97,12 +96,12 @@
         <p>Another essential ally in my programming endeavor was a browser’s <strong>debugger</strong> and <strong>console</strong>. Using the <strong>debugger</strong> to pause the program at specific points to catch <strong>bugs,</strong> going through
           the program line and line, stepping in and out of <strong>functions,</strong> and examining the program’s behavior. As well as <strong>logging variables, calling functions</strong> and others in the <strong>console</strong> to ensure everything
           runs, as it ought to.</p>
-        <p>Finally, and after much effort I had finished my <a href="2-do">2-Do List</a> with the features and functionality that I intended it to have. I’ve always disliked boasting, but I got to say that I do feel proud in this first moment of programming
+        <p>Finally, and after much effort I had finished my <a href="#2-do">2-Do List</a> with the features and functionality that I intended it to have. I’ve always disliked boasting, but I got to say that I do feel proud in this first moment of programming
           victory.
         </p>
         <small>June 1, 2017</small></span>
         <h3 id="dsgn">💭 Hacking Graphic Design or Sketch for Devs 💭</h3>
-        <span id="dsgn-txt"><p>Hey <span class="hacker">hackers</span>, <span class="hacker">designers</span> and <span class="hacker">design hackers.</span><br>It's your boy <a href="mailto:me@l0rdcafe.com">l0rdcafe</a>. This post is a brief overview
+        <span id="dsgn-txt"><p>Hey <span class="main__body__content__span">hackers</span>, <span class="main__body__content__span">designers</span> and <span class="main__body__content__span">design hackers.</span><br>It's your boy <a href="mailto:me@l0rdcafe.com">l0rdcafe</a>. This post is a brief overview
         of my experience learning graphic design basics with <a href="https://www.sketchapp.com/" target="_blank">Sketch.</a> I'll be going through what I learned, built, and how useful these new skills are.</p>
         <p><a href="https://www.sketchapp.com/" target="_blank">Sketch</a> is a lighter and more affordable alternative to <a href="http://www.adobe.com/ca/products/photoshop.html" target="_blank">Adobe Photoshop.</a> <a href="https://www,sketchapp.com"
             target="_blank">Sketch</a> simplifies some tasks that otherwise would be rather complicated to execute in other applications.</p>
@@ -117,12 +116,12 @@
         <p>Lastly, <a href="https://www.lynda.com/Sketch-tutorials/UX-Design-Tools-Sketch/505807-2.html?srchtrk=index%3a1%0alinktypeid%3a2%0aq%3asketch+ux+design%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2" target="_blank">Sketch for UX Design</a>          was the last course I finished and it was almost an aggregate of all the aforementioned skills giving a broad outline of <a href="https://www.sketchapp.com" target="_blank">Sketch</a> and how it can be utilized to build for a range of devices
           including the likes of <a href="https://www.apple.com/ca/watch/?afid=p238%7CsiRW00CTe-dc_mtid_2092506t42625_pcrid_187244146446_&cid=wwa-ca-kwgo-watch-slid-" target="_blank">Apple Watch</a>. Also, the course gets into several
           <strong>plugins,</strong> <a href="https://www.sketchappsources.com/" target="_blank">Sketch App Sources</a> and how the <a href="http://sketchtoolbox.com/" target="_blank">Sketch Toolbox</a> can be used to install a plethora of <strong>plugins</strong>          created by the vibrant <a href="https://www.sketchapp.com/community/" target="_blank">Sketch community.</a></p>
-        <p>To wrap up, <a href="https://www.sketchapp.com" target="_blank">Sketch</a> is an impressively user-friendly tool that allows <span class="hacker">designers,</span> and <span class="hacker">developers</span> to quickly draw up <strong>mockups</strong>,
-          create <strong>icons,</strong> <strong>assets, asset libraries,</strong> among numerous other functions. With my newly-acquired <a href="https://www.sketchapp.com" target="_blank">Sketch</a> nous, I made a fairly simple <a href="mailto:me@l0rdcafe.com">l0rdcafe</a>          logo <a href="#flex-side" class="c">(See?)</a> as well as a mockup responsive design of a website for a fictional app for 4 devices in the
+        <p>To wrap up, <a href="https://www.sketchapp.com" target="_blank">Sketch</a> is an impressively user-friendly tool that allows <span class="main__body__content__span">designers,</span> and <span class="main__body__content__span">developers</span> to quickly draw up <strong>mockups</strong>,
+          create <strong>icons,</strong> <strong>assets, asset libraries,</strong> among numerous other functions. With my newly-acquired <a href="https://www.sketchapp.com" target="_blank">Sketch</a> nous, I made a fairly simple <a href="mailto:me@l0rdcafe.com">l0rdcafe</a>          logo <a href="#nav" class="main__body__content__span--hidden">(See?)</a> as well as a mockup responsive design of a website for a fictional app for 4 devices in the
           <a href="#uber">projects</a> section.</p>
         <small>May 8, 2017</small></span>
         <h3 id="newdev">💭 How To Setup Your Macbook Pro To Be More Efficient for Editing Code (For New Web Devs) 💭</h3>
-        <span id="dev-txt"><p>Hey <span class="hacker">hacker friends!</span><br>It’s <a href="mailto:me@l0rdcafe.com">l0rdcafé</a>. I fleetingly mentioned the term <strong>tech stack</strong> in the previous post. Here, we go deeper into that and how
+        <span id="dev-txt"><p>Hey <span class="main__body__content__span">hacker friends!</span><br>It’s <a href="mailto:me@l0rdcafe.com">l0rdcafé</a>. I fleetingly mentioned the term <strong>tech stack</strong> in the previous post. Here, we go deeper into that and how
         to set up a well-organized workflow especially for new web developers on Mac.</p>
         <ol>
           <li><i class="fa fa-square"></i><a href="#itrm">iTerm2</a></li>
@@ -143,7 +142,7 @@
         <p>Before you go any further, you should install <a href="https://brew.sh/" target="_blank">Homebrew</a>. It'll give you quick access to a plethora of software by running simple commands, dubbed as the missing package manager for macOS. Copy/paste
           the command into your terminal.</p>
         <h4 id="node">Node</h4>
-        <p>Up next is <a href="https://nodejs.org/en/" target="_blank">Node,</a> which after installing <a href="https://brew.sh/" target="_blank">Homebrew</a> becomes a much simpler task. Run <code>brew install node</code>. Now, run <code>node -v</code>          to see if it's installed, and then also <code>npm -v</code>. If it is, you should see something similar to this.</p><img src="assets/node.png" class="node">
+        <p>Up next is <a href="https://nodejs.org/en/" target="_blank">Node,</a> which after installing <a href="https://brew.sh/" target="_blank">Homebrew</a> becomes a much simpler task. Run <code>brew install node</code>. Now, run <code>node -v</code>          to see if it's installed, and then also <code>npm -v</code>. If it is, you should see something similar to this.</p><img src="assets/node.png" class="main__body__content__img">
         <h4 id="tldr">Easier to read Manual Pages</h4>
         <p>If you know some basic
           <strong>UNIX command line</strong> and know about the <code>man</code> pages, which are notoriously dizzying to read, then you should start off by installing <a href="https://github.com/tldr-pages/tldr" target="_blank">tldr</a>. Simply run <code>sudo npm install –g tldr</code>,
@@ -166,7 +165,7 @@
         <p>Now it’s time to upgrade your <strong>text editor</strong>. Personally, I picked <a href="https://atom.io/" target="_blank">Atom</a> at the start and have been using it ever since, so this is going to be catered to that but feel free to look up
           equivalent upgrades for whatever <strong>text editor</strong> you end up choosing. <strong>Linters</strong> are packages installed in a <strong>text editor</strong> that, given specific settings will clean up your code and pick up on any syntax
           errors. This is a pretty long list, since you have to install <strong>linters</strong> for each language. However, I highly advise against copy/pasting and to actually type in each command.</p>
-        <code class="lntr l-lntr">
+        <code class="main__body__content__code">
                   apm install linter-csslint<br>
                   apm install linter-htmlhint<br>
                   apm install linter-jsonlint<br>
@@ -193,7 +192,7 @@
         </p>
         <small>April 27, 2017</small></span>
         <h3 id="src">💭 My First Open Source Contribution 💭</h3>
-        <span id="src-txt"><p>Hey <span class="hacker">hackers!</span><br> <a href="mailto:me@l0rdcafe.com" class="l0rd">l0rdcafé</a> here. This post is about <b>version control</b>, how I learned <b>git</b> and in turn my first open source contribution.
+        <span id="src-txt"><p>Hey <span class="main__body__content__span">hackers!</span><br> <a href="mailto:me@l0rdcafe.com" class="l0rd">l0rdcafé</a> here. This post is about <b>version control</b>, how I learned <b>git</b> and in turn my first open source contribution.
         Up until then, my technical proficiency with <b>version control</b> was limited. I had a basic workflow to initialize a <b>repository</b>, add files, <b>commit changes</b> and <b>push repositories</b> to a remote server, in my case
         <a href="http://github.com" target="_blank">GitHub</a> but that was about it.</p>
         <p>My <b>git workflow</b> was a product of the aforementioned <a href="https://www.learnenough.com/git-tutorial" target="_blank">Learn Enough tutorial on version control</a>, <a href="https://guides.github.com/" target="_blank">GitHub’s Guides</a>          and trial and error within reasonable limits. Until one day after updating my <b>tech stack</b>, <a href="#newdev">(more on that to come later!)</a> and getting <a href="http://browsersync.io/" target="http://browsersync.io/">browser-sync</a>,
@@ -232,7 +231,7 @@
       </div>
 
       <h2 class="tit l-tit">🧀</h2>
-      <div class="cheese" id="cheese">
+      <div class="main__body__media--special" id="cheese">
         <img src="assets/raclette.gif">
 
       </div>

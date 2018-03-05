@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="google-site-verification" content="clMLvnrVOui94EjlU2xcbMMATYL8L1dj7MkNHRSjhxQ" />
+    <title>👑 l0rdcafé 👑 Personal Homepage of Ismail Arafa, Egyptian Web Developer and Musician based in Toronto, Canada 🍁</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/cc-ss.min.css">
+<link rel="stylesheet" href="/css/style.min.css">
+</head>
+
+<div class="main">
+  
+<div class="main__nav" id="nav">
+      <div class="main__nav__wrapper">
+        <h1 class="main__nav__wrapper__header animated tada"><a href="/">👑 <img src="/assets/l0rdcafe.jpg" class="main__nav__wrapper__logo"> 👑</a></h1>
+        <img src="/assets/l0rd.jpg">
+        <div>
+          <p>Ismail Arafa is a junior <a href="#projects">web developer 💻</a>, <a href="#music">accomplished musician 🎼</a>, and huge <a href="#cheese">cheese 🧀 fiend</a>.<br><small>Based in Toronto, Canada </small>
+            <span class="main__nav__wrapper__span">🍁</span>
+          </p>
+          <ul class="main__nav__wrapper__list">
+            <li><a href="mailto:me@l0rdcafe.com"><i class="fa fa-envelope-o fa-lg"></i>
+                        </a></li>
+            <li><a href="https://twitter.com/l0rdcafe" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
+            </li>
+            <li><a href="https://soundcloud.com/the-lords-blueprints" target="_blank"><i class="fa fa-soundcloud fa-lg"></i></a></li>
+            <li><a href="https://github.com/l0rdcafe" target="_blank"><i class="fa fa-github fa-lg"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  <div class="main__body">
+    <div class="main__body__section--content"><h1>💭 Setup Your Macbook Pro To Be More Efficient for Editing Code (For New Web Devs) 💭</h1>
+<p><p>Hey <span class="main__body__content__span">hacker friends!</span> It’s <a href="mailto:me@l0rdcafe.com" target="_blank" rel="noopener">l0rdcafé</a>. I fleetingly mentioned the term <strong>tech stack</strong> in the previous post. Here, we go deeper into that and how to set up a well-organized workflow especially for new web developers on Mac.</p>
+<ol>
+<li><i class="fa fa-square"></i><a href="#itrm">iTerm2</a></li>
+<li><i class="fa fa-square"></i><a href="#brew">Homebrew</a></li>
+<li><i class="fa fa-square"></i><a href="#node">Node</a></li>
+<li><i class="fa fa-square"></i><a href="#tldr">Easier to read manual pages</a></li>
+<li><i class="fa fa-square"></i><a href="#zsh">Setup your Shell with Prezto</a></li>
+<li><i class="fa fa-square"></i><a href="#j">Faster directory navigation</a></li>
+<li><i class="fa fa-square"></i><a href="#brwsr">Efficient CSS workflow</a></li>
+<li><i class="fa fa-square"></i><a href="#lntrs">Linters and other plugins</a></li>
+<li><i class="fa fa-square"></i><a href="#autop">Autoprefixer</a></li>
+</ol>
+<h4 id="itrm">iTerm2</h4>
+
+<p>If you’re still using the default <strong>Mac Terminal</strong>, bin that instantly and download <a href="https://iterm2.com/" target="_blank" rel="noopener">iTerm2</a>. Press <strong>Cmd-N</strong>, instant improvement, right?</p>
+<p><a href="https://www.iterm2.com/" target="_blank" rel="noopener">iTerm2</a> unlike <strong>Terminal</strong>, is very customizable. So give the preferences a look and toy with the colors. Additionally, you can download <a href="http://iterm2colorschemes.com/" target="_blank" rel="noopener">preset color schemes</a>.<img src="colors.gif" alt=""></p>
+<h4 id="brew">Homebrew</h4>
+
+<p>Before you go any further, you should install <a href="https://brew.sh/" target="_blank" rel="noopener">Homebrew</a>. It’ll give you quick access to a plethora of software by running simple commands, dubbed as the missing package manager for macOS. Copy/paste the command into your terminal.</p>
+<h4 id="node">Node</h4>
+
+<p>Up next is <a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node,</a> which after installing <a href="https://brew.sh/" target="_blank" rel="noopener">Homebrew</a> becomes a much simpler task. Run <code>brew install node</code>. Now, run <code>node -v</code> to see if it’s installed, and then also <code>npm -v</code>. If it is, you should see something similar to this.</p>
+<p><img src="node.png" alt=""></p>
+<h4 id="tldr">Easier to read Manual Pages</h4>
+
+<p>If you know some basic <strong>UNIX command line</strong> and know about the <code>man</code> pages, which are notoriously dizzying to read, then you should start off by installing <a href="https://github.com/tldr-pages/tldr" target="_blank" rel="noopener">tldr</a>. Simply run <code>sudo npm install –g tldr</code>, then run <code>tldr echo</code> to see if it works. The <code>sudo</code> prefix might not be necessary, depending on your admin preferences. But if you run the command without it and returns an error, then it will be.</p>
+<h4 id="zsh">Shell Setup with Prezto</h4>
+
+<p>The default <strong>Shell</strong> is <code>.bash</code>, which isn’t necessarily the most efficient. You can tell which <strong>Shell</strong> is running by looking at the top of your terminal window.</p>
+<p><img src="bash.png" alt=""></p>
+<p>That’s where <a href="https://github.com/sorin-ionescu/prezto" target="_blank" rel="noopener">Prezto</a> comes into play, a <code>.zsh</code> <strong>framework</strong> enriching the command line interface with <strong>aliases</strong>, <strong>sane defaults</strong>, <strong>prompt themes</strong> and most importantly <strong>auto completion</strong>; a true savior!</p>
+<p>Run <code>zsh</code> to start a <code>.zsh</code> session and follow the installation instructions carefully.</p>
+<p>As with most things, you’ll need to customize your <a href="https://github.com/sorin-ionescu/prezto" target="_blank" rel="noopener">Prezto</a> modules. So go to your home directory by running <code>cd</code>, then run <code>ls -a</code> and check to see if there’s a <code>.zpreztorc</code>. If there is and there should be, open that file in your <strong>text editor</strong>and make sure the modules from line 26 to 44 are in the following order.</p>
+<p><img src="assets/module.png" alt=""></p>
+<h4 id="j">Faster Directory Navigation</h4>
+
+<p>Moreover, if you’ve used the <code>cd</code> command enough, you’ll know how consuming directory navigation can be. Run <code>brew install fasd</code> and now you can use the command <code>j</code> with any <strong>directory</strong> that you’ve visited before as its <strong>argument</strong> to navigate instantly there. Here’s an example of it in action.</p>
+<p><img src="fasd.gif" alt=""></p>
+<h4 id="brwsr">Efficient CSS Workflow</h4>
+
+<p>Writing <strong>CSS</strong> can be a pain when you have to refresh the page on your browser with each saved change. That’s why <a href="https://browsersync.io/" target="_blank" rel="noopener">browser-sync</a> exists, run <code>sudo npm install –g browser-sync</code>, then <code>tldr browser-sync</code> <a href="#src">(Aha!)</a> for examples on how to use it.</p>
+<p><img src="browser-sync.gif" alt=""></p>
+<h4 id="lntrs">Linters and Text Editor Plugins</h4>
+
+<p>Now it’s time to upgrade your <strong>text editor</strong>. Personally, I picked <a href="https://atom.io/" target="_blank" rel="noopener">Atom</a> at the start and have been using it ever since, so this is going to be catered to that but feel free to look up equivalent upgrades for whatever <strong>text editor</strong> you end up choosing. <strong>Linters</strong> are packages installed in a <strong>text editor</strong> that, given specific settings will clean up your code and pick up on any syntax errors. This is a pretty long list, since you have to install <strong>linters</strong> for each language. However, I highly advise against copy/pasting and to actually type in each command.</p>
+<p><code class="main__body__content__code">apm install linter-csslint<br>apm install linter-htmlhint<br>apm install linter-jsonlint<br>apm install linter-scss-lint<br>apm install linter-markdown<br>apm install linter-eslint<br>apm install linter-stylefmt<br>apm install linter-write-good<br>apm install atom-beautify<br>apm install git-diff<br>apm install jquery<br>apm install pigments<br>apm install file-type-icons<br>apm install open-recent</code></p>
+<p>You will need to customize some of these plugins. Firstly, create a <code>~/.eslintrc</code> file and write the following in it.</p>
+<p><img src="eslintrc.png" alt=""></p>
+<p>Then your beautify settings should match those in the following image.</p>
+<p><img src="beautify.png" alt=""></p>
+<p>You’ll also need to tick the box for Use global ESLint installation as well as specify the <strong>.eslintrc Path</strong> to the <code>~/.eslintrc</code> file created earlier. You can implement these changes in the linter-eslint plugin settings as shown below. Additionally, you should run <code>npm get prefix</code> and input the result into the <strong>Global Node Installation Path</strong> box.</p>
+<p><img src="stylelint2.png" alt=""></p>
+<h4 id="autop">Autoprefixer</h4>
+
+<p>Beyond <strong>linters</strong>, an <strong>autoprefixer</strong> will be your new best friend. You’ll never have to hardcode <strong>vendor prefixes</strong> again. By simply running <code>apm install autoprefixer</code> and setting it to prefix on save, you can simply code, save and <strong>vendor prefixes</strong> will be prefixed automagically.</p>
+<p>That’s it for the web developer starter pack. These tools will help you establish an efficient workflow and save you time and cognitive load to work on other less trivial issues as opposed to figuring out <strong>vendor prefixes</strong> for random properties.</p>
+</p>
+<small>April 27, 2017</small>
+</div>
+
+  </div>
+</div>
+</html>

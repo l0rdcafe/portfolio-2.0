@@ -79,4 +79,4 @@ theme: l0rd-theme
 deploy:
   type: git
   repo: https://github.com/l0rdcafe/portfolio-2.0
-  branch: gh-pages
+  branch: master

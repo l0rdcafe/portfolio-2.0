@@ -24,7 +24,7 @@
     "gulp-postcss": "^7.0.1",
     "gulp-rename": "^1.2.2",
     "postcss-import": "^11.1.0",
-    "postcss-nesting": "^4.2.1",
+    "postcss-nested": "^3.0.0",
     "postcss-simple-vars": "^4.1.0"
   }
 }

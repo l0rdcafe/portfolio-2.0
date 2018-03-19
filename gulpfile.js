@@ -21,6 +21,7 @@ gulp.task("custom-css", () =>
   gulp
     .src("./themes/l0rd-theme/source/css/style.css")
     .pipe(postcss([autoprefixer(), postcssimport(), vars(), nest(), colors()]))
+    .pipe(cssnano())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("./themes/l0rd-theme/source/css/"))
 );

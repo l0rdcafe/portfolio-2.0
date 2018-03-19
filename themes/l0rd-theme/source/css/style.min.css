@@ -343,7 +343,7 @@ h6 {
 }a {
   color: #3d9970;
 }a:hover {
-  color: lighten(#3d9970, 10%);
+  color: rgb(67, 168, 122);
 }.button,
 button,
 input[type="submit"],
@@ -376,8 +376,8 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  color: lighten(#3d9970, 10%);
-  border-color: lighten(#3d9970, 10%);
+  color: rgb(67, 168, 122);
+  border-color: rgb(67, 168, 122);
   outline: 0;
 }input[type="email"],
 input[type="number"],
@@ -458,7 +458,7 @@ ol ul {
   font-size: 90%;
   white-space: nowrap;
   background: #ddd;
-  border: 1px solid darken(silver, 5%);
+  border: 1px solid rgb(181, 181, 181);
   border-radius: 4px;
 }pre > code {
   display: block;
@@ -559,7 +559,7 @@ form {
 }.main__nav a {
     color: #ffdc00;
     font-weight: 300;
-  }.main__nav a:hover { color: lighten(#ffdc00, 40%); }@media (min-width: 768px) {.main__nav {
+  }.main__nav a:hover { color: rgb(255, 235, 102); }@media (min-width: 768px) {.main__nav {
     flex: 1 0 30%;
     min-height: 100vh
 }
@@ -673,11 +673,11 @@ form {
     }.main__body .main__body__section--content ol i {
         color: #ffdc00;
         transition: all 0.25s;
-      }.main__body .main__body__section--content ol i:hover { color: lighten(#ffdc00, 20%); }.main__body .main__body__section--content ol li:hover > i { color: lighten(#ffdc00, 20%); }.main__body .main__body__section--content ol a { margin-left: 1.5%; }.main__body .main__body__section--content h3 {
+      }.main__body .main__body__section--content ol i:hover { color: rgb(255, 228, 51); }.main__body .main__body__section--content ol li:hover > i { color: rgb(255, 228, 51); }.main__body .main__body__section--content ol a { margin-left: 1.5%; }.main__body .main__body__section--content h3 {
       margin-top: 1em;
       cursor: pointer;
       transition: all 0.1s;
-    }.main__body .main__body__section--content h3:hover { color: lighten(#3d9970, 15%); }.main__body .icon--up,
+    }.main__body .main__body__section--content h3:hover { color: rgb(70, 175, 128); }.main__body .icon--up,
   .main__body .icon--down {
     display: inline-block;
     opacity: 0;
@@ -721,7 +721,7 @@ form {
     font-weight: 500;
     color: #85144b;
     transition: all 0.25s;
-  }.main__body .main__body__content__span:hover, .main__body .main__body__section__span:hover { color: lighten(#85144b, 30%); }.main__body .main__body__section__header,
+  }.main__body .main__body__content__span:hover, .main__body .main__body__section__span:hover { color: rgb(173, 26, 97); }.main__body .main__body__section__header,
   .main__body .main__body__section__media__title { margin-top: 1.5em; }.main__body .main__body__section__media {
     display: flex;
     flex-wrap: wrap;

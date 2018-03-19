@@ -6,6 +6,7 @@ const vars = require("postcss-simple-vars");
 const cssnano = require("gulp-cssnano");
 const rename = require("gulp-rename");
 const nest = require("postcss-nested");
+const colors = require("postcss-sass-color-functions");
 
 gulp.task("ccss", () =>
   gulp
@@ -19,7 +20,7 @@ gulp.task("ccss", () =>
 gulp.task("custom-css", () =>
   gulp
     .src("./themes/l0rd-theme/source/css/style.css")
-    .pipe(postcss([autoprefixer(), postcssimport(), vars(), nest()]))
+    .pipe(postcss([autoprefixer(), postcssimport(), vars(), nest(), colors()]))
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("./themes/l0rd-theme/source/css/"))
 );

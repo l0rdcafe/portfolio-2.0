@@ -1,5 +1,5 @@
-@import 'cc-ss_colors';
-@import 'cc-ss_skeleton';
+@import 'cc-ss-colors';
+@import 'cc-ss-skeleton';
 
 $clear: 1;
 $minvh: 100vh;

@@ -38,7 +38,6 @@ $white: #fff;
 $silver: #ddd;
 $gray: #aaa;
 $black: #111;
-$l0rd-green: $olive;
 
 /* Gradients */
 
@@ -136,15 +135,4 @@ $l0rd-green: $olive;
   background: -webkit-linear-gradient(-180deg, $silver, $black);
   background: -webkit-linear-gradient(top, $silver, $black);
   background: linear-gradient(-180deg, $silver, $black);
-}
-
-.grad-silver-white {
-  background: -webkit-linear-gradient(top, $silver, $white);
-  background: linear-gradient(-180deg, $silver, $white);
-}
-
-.grad-l0rd-green {
-  background: -webkit-linear-gradient(top, $l0rd-green, $green);
-  background: -webkit-linear-gradient(top, $l0rd-green, $lime);
-  background: linear-gradient(-180deg, $l0rd-green, $green);
 }

@@ -15,7 +15,7 @@ body {
   p { font-weight: 100; }
 
   a {
-    font-weight: 500;
+    font-weight: 300;
     text-decoration: none;
     -webkit-transition: all 0.25s;
     transition: all 0.25s;
@@ -81,6 +81,7 @@ body {
   p {
     color: #fff;
     font-weight: 300;
+    letter-spacing: 0.005em;
   }
 
   small {
@@ -207,7 +208,6 @@ body {
   p {
     font-weight: 300;
     line-height: 1.5em;
-    letter-spacing: 0.005em;
   }
 
   small {
@@ -216,7 +216,8 @@ body {
     color: $maroon;
     margin-right: 1.5%;
     padding: 1em 0;
-    float: right;
+    display: flex;
+    justify-content: flex-end;
   }
 
   .main__body__section--content {

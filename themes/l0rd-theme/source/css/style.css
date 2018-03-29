@@ -65,10 +65,10 @@ body {
   box-shadow: 5px 0 9px $primary-color;
 
   a {
-    color: $secondary-color;
+    color: $yellow;
     font-weight: 300;
 
-    &:hover { color: lighten($secondary-color, 40%); }
+    &:hover { color: lighten($yellow, 40%); }
   }
 
   @media (min-width: $break-lrg) {

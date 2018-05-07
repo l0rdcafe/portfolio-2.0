@@ -25,15 +25,15 @@
 */
 
 @import 'cc-ss-colors';
-@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700|Space+Mono');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700|Space+Mono:400');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css');
 
 $primary-color: $olive;
 $secondary-color: $maroon;
 $primary-text-color: $black;
 $secondary-text-color: $white;
-$base-font: "Space Mono", sans-serif;
-$heading-font: "Inconsalata", sans-serif;
+$base-font: "Inconsalata", monospace;
+$heading-font: "Space Mono", monospace;
 
 body {
   margin: 0;
@@ -228,7 +228,7 @@ h5,
 h6 {
   margin-top: 0;
   margin-bottom: 2rem;
-  font-weight: 400;
+  font-weight: 300;
   font-family: $heading-font;
   color: $primary-color;
 }
@@ -236,31 +236,31 @@ h6 {
 h1 {
   font-size: 4rem;
   line-height: 1.2;
-  letter-spacing: -0.1rem;
+  letter-spacing: -0.45rem;
 }
 
 h2 {
   font-size: 3.6rem;
   line-height: 1.25;
-  letter-spacing: -0.1rem;
+  letter-spacing: -0.35rem;
 }
 
 h3 {
   font-size: 3rem;
   line-height: 1.3;
-  letter-spacing: -0.1rem;
+  letter-spacing: -0.15rem;
 }
 
 h4 {
   font-size: 2.4rem;
   line-height: 1.35;
-  letter-spacing: -0.08rem;
+  letter-spacing: -0.2rem;
 }
 
 h5 {
   font-size: 1.8rem;
   line-height: 1.5;
-  letter-spacing: -0.05rem;
+  letter-spacing: -0.1rem;
 }
 
 h6 {
@@ -304,6 +304,7 @@ a {
   color: $primary-color;
   text-decoration: none;
   transition: all 0.2s;
+  font-weight: 700;
 }
 
 a:hover {

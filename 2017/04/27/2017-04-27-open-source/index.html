@@ -6,35 +6,21 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="google-site-verification" content="clMLvnrVOui94EjlU2xcbMMATYL8L1dj7MkNHRSjhxQ" />
     <title>👑 l0rdcafé 👑 Personal Homepage of Ismail Arafa, Egyptian Web Developer and Musician based in Toronto, Canada 🍁</title>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/css/cc-ss.min.css">
 <link rel="stylesheet" href="/css/style.min.css">
 </head>
 
 <div class="main">
-  
-<div class="main__nav" id="nav">
-      <div class="main__nav__wrapper">
-        <h1 class="main__nav__wrapper__header animated tada"><a href="/">👑 <img src="/assets/l0rdcafe.jpg" class="main__nav__wrapper__logo"> 👑</a></h1>
-        <img src="/assets/l0rd.jpg">
-        <div>
-          <p>Ismail Arafa is a junior <a href="/#projects">web developer 💻</a>, <a href="/#music">accomplished musician 🎼</a>, and huge cheese 🧀 fiend.<br><small>Based in Toronto, Canada </small>
-            <span class="main__nav__wrapper__span">🍁</span>
-          </p>
-          <ul class="main__nav__wrapper__list">
-            <li><a href="mailto:me@l0rdcafe.com"><i class="fa fa-envelope-o fa-lg"></i>
-                        </a></li>
-            <li><a href="https://twitter.com/l0rdcafe" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
-            </li>
-            <li><a href="https://soundcloud.com/the-lords-blueprints" target="_blank"><i class="fa fa-soundcloud fa-lg"></i></a></li>
-            <li><a href="https://github.com/l0rdcafe" target="_blank"><i class="fa fa-github fa-lg"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    <ul class="main__nav">
+    <li class="main__nav__logo"><img src="/assets/l0rdcafe.jpg"></li>
+      <a class="main__nav__item" href="/"><li></li>Home</li></a>
+      <a class="main__nav__item" href="/#blog"><li></li>Blog</li></a>
+      <a class="main__nav__item" href="/#music"><li></li>Music</li></a>
+  </ul>
 
-  <div class="main__body">
-    <div class="main__body__section--content"><h1>💭 My First Open Source Contribution 💭</h1>
+<div class="main__body">
+<div class="main__body__section--post"><h1>💭 My First Open Source Contribution 💭</h1>
 <p><p>Hey <span class="main__body__content__span">hackers!</span> <a href="mailto:me@l0rdcafe.com" target="_blank" rel="noopener">l0rdcafé</a> here. This post is about <strong>version control</strong>, how I learned <strong>git</strong> and in turn my first open source contribution. Up until then, my technical proficiency with <strong>version control</strong> was limited. I had a basic workflow to initialize a <strong>repository</strong>, add files, <strong>commit changes</strong> and <strong>push repositories</strong> to a remote server, in my case <a href="http://github.com" target="_blank" rel="noopener">GitHub</a> but that was about it.</p>
 <p>My <strong>git workflow</strong> was a product of the aforementioned <a href="https://www.learnenough.com/git-tutorial" target="_blank" rel="noopener">Learn Enough tutorial on version control</a>, <a href="https://guides.github.com/" target="_blank" rel="noopener">GitHub’s Guides</a> and trial and error within reasonable limits. Until one day after updating my <strong>tech stack</strong>, <a href="#newdev">(more on that to come later!)</a> and getting <a href="http://browsersync.io/" target="_blank" rel="noopener">browser-sync</a>, which starts a <strong>local</strong> web server that updates browser on file changes. I noticed the <a href="https://github.com/tldr-pages/tldr" target="_blank" rel="noopener">tldr</a> pages were missing a page for <a href="http://browsersync.io" target="_blank" rel="noopener">browser-sync</a> after needing to look up some syntax examples.</p>
 <p>Seeing an opportunity to contribute, I went to the <a href="https://github.com/tldr-pages/tldr" target="_blank" rel="noopener">GitHub tldr repo</a>, <strong>forked</strong> a copy from its <strong>master branch</strong>, and created my one-page contribution to the <a href="https://github.com/tldr-pages/tldr" target="_blank" rel="noopener">tldr</a>. Again, <a href="https://github.com/jellyc0la" target="_blank" rel="noopener">jellyc0la’s</a> guidance was invaluable to my success, helping me ensure adherence to the standardized format of the <strong>tldr pages</strong>. Inevitably and due to my inexperience with <strong>git</strong> as well as the <strong>CI server</strong>, I committed one too many changes.</p>
@@ -43,7 +29,17 @@
 </p>
 <small>April 27, 2017</small>
 </div>
-
-  </div>
+</div>
+    <footer class="footer">
+        <div class="footer__body">
+          <h4>Made by 👑 l0rdcafe 👑</h4>
+          <ul class="footer__social">
+            <li class="social__item"><a href="mailto:me@l0rdcafe.com"><i class="far fa-envelope fa-lg"></i></a></li>
+            <li class="social__item"><a href="https://github.com/l0rdcafe/"><i class="fab fa-github fa-lg"></i></a></li>
+            <li class="social__item"><a href="https://soundcloud.com/the-lords-blueprints"><i class="fab fa-soundcloud fa-lg"></i></a></li>
+            <li class="social__item"><a href="https://twitter.com/l0rdcafe"><i class="fab fa-twitter fa-lg"></i></a></li>
+          </ul>
+        </div>
+      </footer>
 </div>
 </html>

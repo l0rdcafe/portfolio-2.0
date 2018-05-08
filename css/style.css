@@ -143,7 +143,7 @@ body {
       height: 8%;
       text-align: center;
       align-items: center;
-      width: 60%;
+      width: 100%;
       float: right;
 
       .main__banner__list__logo {
@@ -283,7 +283,7 @@ body {
   text-align: center;
 
   .main__body__section {
-    margin-top: 2em;
+    margin-top: 4em;
     padding: 8%;
 
     h2 {
@@ -304,29 +304,29 @@ body {
       text-align: left;
       display: inline-block;
       margin: 2%;
-    }
 
-    img {
-      border: 1px solid $gray;
-    }
-
-    img,
-    p,
-    h6 {
-      transition: opacity 0.2s;
-    }
-
-    a:hover img,
-    a:hover p,
-    a:hover h4,
-    a:active img,
-    a:active p,
-    a:active h4 {
-      opacity: 0.5;
-    }
-
-    a:hover {
-      color: $primary-color;
+      img {
+        border: 1px solid $gray;
+      }
+  
+      img,
+      p,
+      h6 {
+        transition: opacity 0.2s;
+      }
+  
+      a:hover img,
+      a:hover p,
+      a:hover h4,
+      a:active img,
+      a:active p,
+      a:active h4 {
+        opacity: 0.5;
+      }
+  
+      a:hover {
+        color: $primary-color;
+      }
     }
 
     @media (min-width: $break-lrg) {
@@ -430,8 +430,9 @@ body {
     font-weight: 300;
     line-height: 1.3em;
     letter-spacing: 0.005em;
-    margin-top: 2em;
+    margin-top: 6em;
     text-align: center;
+    margin-bottom: 2em;
 
     h2 {
       font-size: 3rem;
@@ -444,6 +445,7 @@ body {
 
     small {
       justify-content: flex-start;
+      margin-bottom: 2.5em;
     }
 
     .main__body__content__span--hidden {
@@ -514,6 +516,7 @@ body {
   }
 
   img { max-width: 100%; }
+  h3 { margin-top: 2.5em; }
 
   iframe {
     border-radius: 2px;

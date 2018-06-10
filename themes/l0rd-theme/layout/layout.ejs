@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<%- partial('_partial/head') %>
+    <% if (page.date) { %>
+        <%- partial('_partial/post-head') %>
+    <% } else { %>
+        <%- partial('_partial/head') %>
+    <% } %>
 <div class="main">
     <%- body %>
     <%- partial('_partial/footer') %>

@@ -2,6 +2,8 @@
 title: My First Open Source Contribution
 date: 2017-04-27 11:00:00
 tags: null
+description: l0rdcafe's experience with open source contribution to the tldr manual pages, adding a page for the browser-sync CLI. Blog post features references to M. Hartl's Learn Enough series and discusses git version control and advanced topics such as git rebase, bypassing a CI server, cleaning up git history, and how to submit a pull request to an open source project on github.
+og_description: Post about an open source contribution to the tldr manual pages, adding a browser-sync CLI manual page using some git history manipulation and a pull request on github.
 ---
 
 Hey <span class="main__body__content__span">hackers!</span> [l0rdcafé](mailto:me@l0rdcafe.com) here. This post is about **version control**, how I learned **git** and in turn my first open source contribution. Up until then, my technical proficiency with **version control** was limited. I had a basic workflow to initialize a **repository**, add files, **commit changes** and **push repositories** to a remote server, in my case [GitHub](http://github.com) but that was about it.

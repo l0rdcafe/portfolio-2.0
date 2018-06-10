@@ -2,6 +2,8 @@
 title: Programming With JavaScript, Or How I Learned to Stop Worrying And Love The Debugger
 date: 2017-06-01
 tags: null
+description: l0rdcafe's post about his first programming with JavaScript project building a 2-do List MVC and learning JS as a language. Post references Mark Myers' A Smarter Way To Learn Javascript as well as watchandcode.com's Practical JavaScript course, diving into debugging with the web console debugger, helper functions and date validation of 2-do items.
+og_description: First Javascript project as a 2-do list MVC applying topics such as debugging and date validation using resources like Mark Myers' A Smarter Way To Learn Javascript and watchandcode.com's Practical Javascript course.
 ---
 
 Hey <span class="main__body__content__span">hacker friends!</span> Ur fam; [l0rdcafe](mailto:me@l0rdcafe.com) here. This installment is about **JavaScript**, or in other words my first foray into proper programming.

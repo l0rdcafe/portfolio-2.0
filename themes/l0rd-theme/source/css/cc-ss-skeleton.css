@@ -569,3 +569,12 @@ hr {
   display: table;
   clear: both;
 }
+
+.text-c {
+  text-align: center;
+}
+
+.x-centered {
+  display: block;
+  margin: auto;
+}

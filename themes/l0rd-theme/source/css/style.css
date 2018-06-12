@@ -85,10 +85,19 @@ body {
       }
     }
 
+    .l0rd {
+      border-radius: 50%;
+      max-width: 81%;
+    }
+
     @media (min-width: $break-lrg) {
       .main__banner__wrapper {
         margin-bottom: 0.25%;
         font-size: 8rem;
+      }
+
+      .l0rd {
+        max-width: 22%;
       }
     }
 
@@ -105,6 +114,7 @@ body {
       -webkit-animation-duration: 1s;
       animation-duration: 1;
       padding: 1%;
+      padding-top: 2%;
       text-align: center;
 
       @media (min-width: $break-lrg) {

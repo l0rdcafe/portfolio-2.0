@@ -1,68 +1,68 @@
-<div class="main__banner">
-    <h1 class="main__banner__wrapper animated tada"><a href="<%- config.root %>">👑 <img src="<%- config.root %>assets/l0rdcafe.jpg" class="main__banner__wrapper__logo"> 👑</a></h1>
-    <img src="<%- config.root %>assets/l0rd.jpg" class="x-centered">
-    <p>Ismail Arafa is a junior <a href="<%- config.root %>#projects">web developer 💻</a>, <a href="<%- config.root %>#music">accomplished musician 🎼</a>, and huge cheese 🧀 fiend.<br><small>Based in Toronto, Canada </small><span class="main__banner__wrapper__span">🍁</span>
+<div class="main__banner" itemscope itemtype="http://www.l0rdcafe.com/Person">
+    <h1 class="main__banner__wrapper animated tada"><a href="<%- config.root %>" itemprop="url">👑 <img src="<%- config.root %>assets/l0rdcafe.jpg" alt="l0rdcafe logo" class="main__banner__wrapper__logo"> 👑</a></h1>
+    <img src="<%- config.root %>assets/l0rd.jpg" class="l0rd x-centered" alt="Ismail Arafa in Cairo, Egypt circa 2013" itemprop="photo">
+    <p><span itemprop="name">Ismail Arafa</span> is a junior <a href="<%- config.root %>#projects">web developer 💻</a>, <a href="<%- config.root %>#music">accomplished musician 🎼</a>, and huge cheese 🧀 fiend.<br><small>Based in Toronto, Canada </small><span class="main__banner__wrapper__span">🍁</span>
       </p>
-      <ul class="main__banner__list" id="nav">
-        <li class="main__banner__list__logo"><img src="<%- config.root %>assets/l0rdcafe.jpg"></li>
+      <ul class="main__banner__list" id="nav" itemprop="breadcrumb">
+        <li class="main__banner__list__logo"><img src="<%- config.root %>assets/l0rdcafe.jpg" alt="l0rdcafe logo"></li>
           <a class="main__banner__list__item" href="<%- config.root %>"><li></li>Home</li></a>
           <a class="main__banner__list__item" href="<%- config.root %>#blog"><li></li>Blog</li></a>
           <a class="main__banner__list__item" href="<%- config.root %>#music"><li></li>Music</li></a>
       </ul>
 </div>
 <div class="main__body">
-<div class="main__body__section" id="intro">
-        <h2><span class="icon--down">🐪</span> Story <span class="icon--up">🇨🇦</span></h2>
-        <p>Originally a desert dweller, <a href="mailto:me@l0rdcafe.com" class="l0rd">l0rdcafé</a> stumbled upon the art of coding one day and, eager to learn more, he traversed the Atlantic Ocean 🌊 through a combination of camel back riding, telekinesis
+<div class="main__body__section" id="intro" itemscope itemtype="http://www.l0rdcafe.com/Article">
+        <h2 itemprop="name"><span class="icon--down">🐪</span> Story <span class="icon--up">🇨🇦</span></h2>
+        <p itemprop="articleBody">Originally a desert dweller, <a href="mailto:me@l0rdcafe.com" class="l0rd">l0rdcafé</a> stumbled upon the art of coding one day and, eager to learn more, he traversed the Atlantic Ocean 🌊 through a combination of camel back riding, telekinesis
           and sheer willpower.</p>
         <p>After an arduous and tasking journey, he finally made his way to Canadian shores where he would pursue his passions for melting cheese and crafting a myriad of web creations.</p>
       </div>
       <div class="main__body__section" id="projects">
         <h2><span class="icon--down">💾</span> Projects <span class="icon--up">💾</span></h2>
-       <figure class="main__body__section__fig">
-          <a href="https://l0rdcafe.github.io/2do-lst/">
-            <img src="<%- config.root %>assets/todo.png">
-            <h4>To-Do List</h4>
-            <p>A ToDoMVC that evolves date and time expiry.</p>
+       <figure class="main__body__section__fig" itemscope itemtype="http://www.l0rdcafe.com/CreativeWork">
+          <a href="https://l0rdcafe.github.io/2do-lst/" itemprop="url">
+            <img src="<%- config.root %>assets/todo.png" alt="To do list state with two items one completed, and one not" itemprop="image">
+            <h4 itemprop="name">To-Do List</h4>
+            <p itemprop="description">A ToDoMVC that evolves date and time expiry.</p>
           </a>
        </figure>
-       <figure class="main__body__section__fig">
-          <a href="https://github.com/l0rdcafe/branch-set">
-            <img src="<%- config.root %>assets/branch.gif">
-            <h4>Branch Set</h4>
-            <p>Update all git remote branches in a directory.</p>
+       <figure class="main__body__section__fig"  itemscope itemtype="http://www.l0rdcafe.com/CreativeWork">
+          <a href="https://github.com/l0rdcafe/branch-set" itemprop="url">
+            <img src="<%- config.root %>assets/branch.gif" alt="Gif of bash script setting git remote branches" itemprop="image">
+            <h4 itemprop="name">Branch Set</h4>
+            <p itemprop="description">Update all git remote branches in a directory.</p>
           </a>
        </figure>
-       <figure class="main__body__section__fig">
-          <a href="https://l0rdcafe.github.io/ubereaucracy/">
-            <img src="<%- config.root %>assets/uberpage.png">
-            <h4>Ubereaucracy</h4>
-            <p>A design and homepage for making paperwork easier in Egypt. Designed with Sketch App.</p>
+       <figure class="main__body__section__fig"  itemscope itemtype="http://www.l0rdcafe.com/CreativeWork">
+          <a href="https://l0rdcafe.github.io/ubereaucracy/" itemprop="url">
+            <img src="<%- config.root %>assets/uberpage.png" alt="Image of landing page of mock app Ubereaucracy" itemprop="image">
+            <h4 itemprop="name">Ubereaucracy</h4>
+            <p itemprop="description">A design and homepage for making paperwork easier in Egypt. Designed with Sketch App.</p>
           </a>
        </figure>
       </div>
       <div class="main__body__section">
         <h2 id="music"><span class="icon--down">🎼 🎸</span> Music <span class="icon--up">🍺 🎙</span>️</h2>
         <h3>EPs 🎼</h3>
-        <figure class="main__body__section__fig">
-            <iframe scrolling="no" width="398" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/137851268&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-            <h4>عزيزي فادي - "Dear Fady" (2014) 🎙️</h4>
+        <figure class="main__body__section__fig" itemscope itemtype="http://www.l0rdcafe.com/MusicRecording">
+            <iframe scrolling="no" width="398" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/137851268&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true" itemprop="audio"></iframe>
+            <h4 itemprop="name">عزيزي فادي - "Dear Fady" (2014) 🎙️</h4>
              </figure>
-             <figure class="main__body__section__fig">
-                <iframe scrolling="no" width="398" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/171710141&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true">
+             <figure class="main__body__section__fig" itemscope itemtype="http://www.l0rdcafe.com/MusicRecording">
+                <iframe scrolling="no" width="398" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/171710141&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true" itemprop="audio">
                 </iframe>
-                <h4>إندي جامد - "Heavy Indie" (2014) 🎙️</h4>
+                <h4 itemprop="name">إندي جامد - "Heavy Indie" (2014) 🎙️</h4>
                  </figure>
-                 <figure class="main__body__section__fig">
-                    <iframe width="400" height="350" src="https://www.youtube.com/embed/xNztF5wGrT8" frameborder="0" allowfullscreen></iframe>
+                 <figure class="main__body__section__fig" itemscope itemtype="http://www.l0rdcafe.com/MusicRecording">
+                    <iframe width="400" height="350" src="https://www.youtube.com/embed/xNztF5wGrT8" frameborder="0" allowfullscreen itemprop="video"></iframe>
                     <h4 class="text-c">🍺 Live</h4>
                      </figure>
       </div>
-      <div class="main__body__section--content">
+      <div class="main__body__section--content" itemscope itemtype="http://www.l0rdcafe.com/Blog">
         <h2 id="blog"><span class="icon--down">🤔</span>Thoughts<span class="icon--up">🤔</span></h2>
         <% site.posts.forEach(function(post) { %>
-          <h3><a href="<%- url_for(post.path) %>">💭 <%- post.title %> 💭</a></h3>
-          <small><%- post.date.format('MMMM DD, YYYY') %></small>
+          <h3 itemprop="name"><a href="<%- url_for(post.path) %>" itemprop="url">💭 <%- post.title %> 💭</a></h3>
+          <small itemprop="datePublished"><%- post.date.format('MMMM DD, YYYY') %></small>
           <% }) %>
       </div>
     </div>

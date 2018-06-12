@@ -12,7 +12,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="👑 l0rdcafé 👑 Personal Homepage of Ismail Arafa, Freelance Front End Web Developer and Musician based in Toronto, Canada 🍁" />
   <meta property="og:description" content="👑 l0rdcafé 👑 Personal Homepage of Ismail Arafa, Freelance Front End Web Developer and Musician based in Toronto, Canada includes project gallery featuring web apps and projects in a range of topics such as HTML5, CSS4, ES6 and many others. Website also includes front end related blog posts." />
-  <meta property="og:url" content="www.l0rdcafe.com" />
+  <meta property="og:url" content="http://www.l0rdcafe.com" />
 
 <meta property="og:image" content="/assets/code.png" />
 <meta property="og:image:width" content="1018" />
@@ -29,84 +29,84 @@
 </head>
 
     
-<div class="main">
-    <div class="main__banner">
-    <h1 class="main__banner__wrapper animated tada"><a href="/">👑 <img src="/assets/l0rdcafe.jpg" class="main__banner__wrapper__logo"> 👑</a></h1>
-    <img src="/assets/l0rd.jpg" class="x-centered">
-    <p>Ismail Arafa is a junior <a href="/#projects">web developer 💻</a>, <a href="/#music">accomplished musician 🎼</a>, and huge cheese 🧀 fiend.<br><small>Based in Toronto, Canada </small><span class="main__banner__wrapper__span">🍁</span>
+<div class="main" itemscope itemtype="http://www.l0rdcafe.com/WebPage">
+    <div class="main__banner" itemscope itemtype="http://www.l0rdcafe.com/Person">
+    <h1 class="main__banner__wrapper animated tada"><a href="/" itemprop="url">👑 <img src="/assets/l0rdcafe.jpg" alt="l0rdcafe logo" class="main__banner__wrapper__logo"> 👑</a></h1>
+    <img src="/assets/l0rd.jpg" class="l0rd x-centered" alt="Ismail Arafa in Cairo, Egypt circa 2013" itemprop="photo">
+    <p><span itemprop="name">Ismail Arafa</span> is a junior <a href="/#projects">web developer 💻</a>, <a href="/#music">accomplished musician 🎼</a>, and huge cheese 🧀 fiend.<br><small>Based in Toronto, Canada </small><span class="main__banner__wrapper__span">🍁</span>
       </p>
-      <ul class="main__banner__list" id="nav">
-        <li class="main__banner__list__logo"><img src="/assets/l0rdcafe.jpg"></li>
+      <ul class="main__banner__list" id="nav" itemprop="breadcrumb">
+        <li class="main__banner__list__logo"><img src="/assets/l0rdcafe.jpg" alt="l0rdcafe logo"></li>
           <a class="main__banner__list__item" href="/"><li></li>Home</li></a>
           <a class="main__banner__list__item" href="/#blog"><li></li>Blog</li></a>
           <a class="main__banner__list__item" href="/#music"><li></li>Music</li></a>
       </ul>
 </div>
 <div class="main__body">
-<div class="main__body__section" id="intro">
-        <h2><span class="icon--down">🐪</span> Story <span class="icon--up">🇨🇦</span></h2>
-        <p>Originally a desert dweller, <a href="mailto:me@l0rdcafe.com" class="l0rd">l0rdcafé</a> stumbled upon the art of coding one day and, eager to learn more, he traversed the Atlantic Ocean 🌊 through a combination of camel back riding, telekinesis
+<div class="main__body__section" id="intro" itemscope itemtype="http://www.l0rdcafe.com/Article">
+        <h2 itemprop="name"><span class="icon--down">🐪</span> Story <span class="icon--up">🇨🇦</span></h2>
+        <p itemprop="articleBody">Originally a desert dweller, <a href="mailto:me@l0rdcafe.com" class="l0rd">l0rdcafé</a> stumbled upon the art of coding one day and, eager to learn more, he traversed the Atlantic Ocean 🌊 through a combination of camel back riding, telekinesis
           and sheer willpower.</p>
         <p>After an arduous and tasking journey, he finally made his way to Canadian shores where he would pursue his passions for melting cheese and crafting a myriad of web creations.</p>
       </div>
       <div class="main__body__section" id="projects">
         <h2><span class="icon--down">💾</span> Projects <span class="icon--up">💾</span></h2>
-       <figure class="main__body__section__fig">
-          <a href="https://l0rdcafe.github.io/2do-lst/">
-            <img src="/assets/todo.png">
-            <h4>To-Do List</h4>
-            <p>A ToDoMVC that evolves date and time expiry.</p>
+       <figure class="main__body__section__fig" itemscope itemtype="http://www.l0rdcafe.com/CreativeWork">
+          <a href="https://l0rdcafe.github.io/2do-lst/" itemprop="url">
+            <img src="/assets/todo.png" alt="To do list state with two items one completed, and one not" itemprop="image">
+            <h4 itemprop="name">To-Do List</h4>
+            <p itemprop="description">A ToDoMVC that evolves date and time expiry.</p>
           </a>
        </figure>
-       <figure class="main__body__section__fig">
-          <a href="https://github.com/l0rdcafe/branch-set">
-            <img src="/assets/branch.gif">
-            <h4>Branch Set</h4>
-            <p>Update all git remote branches in a directory.</p>
+       <figure class="main__body__section__fig"  itemscope itemtype="http://www.l0rdcafe.com/CreativeWork">
+          <a href="https://github.com/l0rdcafe/branch-set" itemprop="url">
+            <img src="/assets/branch.gif" alt="Gif of bash script setting git remote branches" itemprop="image">
+            <h4 itemprop="name">Branch Set</h4>
+            <p itemprop="description">Update all git remote branches in a directory.</p>
           </a>
        </figure>
-       <figure class="main__body__section__fig">
-          <a href="https://l0rdcafe.github.io/ubereaucracy/">
-            <img src="/assets/uberpage.png">
-            <h4>Ubereaucracy</h4>
-            <p>A design and homepage for making paperwork easier in Egypt. Designed with Sketch App.</p>
+       <figure class="main__body__section__fig"  itemscope itemtype="http://www.l0rdcafe.com/CreativeWork">
+          <a href="https://l0rdcafe.github.io/ubereaucracy/" itemprop="url">
+            <img src="/assets/uberpage.png" alt="Image of landing page of mock app Ubereaucracy" itemprop="image">
+            <h4 itemprop="name">Ubereaucracy</h4>
+            <p itemprop="description">A design and homepage for making paperwork easier in Egypt. Designed with Sketch App.</p>
           </a>
        </figure>
       </div>
       <div class="main__body__section">
         <h2 id="music"><span class="icon--down">🎼 🎸</span> Music <span class="icon--up">🍺 🎙</span>️</h2>
         <h3>EPs 🎼</h3>
-        <figure class="main__body__section__fig">
-            <iframe scrolling="no" width="398" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/137851268&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-            <h4>عزيزي فادي - "Dear Fady" (2014) 🎙️</h4>
+        <figure class="main__body__section__fig" itemscope itemtype="http://www.l0rdcafe.com/MusicRecording">
+            <iframe scrolling="no" width="398" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/137851268&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true" itemprop="audio"></iframe>
+            <h4 itemprop="name">عزيزي فادي - "Dear Fady" (2014) 🎙️</h4>
              </figure>
-             <figure class="main__body__section__fig">
-                <iframe scrolling="no" width="398" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/171710141&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true">
+             <figure class="main__body__section__fig" itemscope itemtype="http://www.l0rdcafe.com/MusicRecording">
+                <iframe scrolling="no" width="398" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/171710141&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true" itemprop="audio">
                 </iframe>
-                <h4>إندي جامد - "Heavy Indie" (2014) 🎙️</h4>
+                <h4 itemprop="name">إندي جامد - "Heavy Indie" (2014) 🎙️</h4>
                  </figure>
-                 <figure class="main__body__section__fig">
-                    <iframe width="400" height="350" src="https://www.youtube.com/embed/xNztF5wGrT8" frameborder="0" allowfullscreen></iframe>
+                 <figure class="main__body__section__fig" itemscope itemtype="http://www.l0rdcafe.com/MusicRecording">
+                    <iframe width="400" height="350" src="https://www.youtube.com/embed/xNztF5wGrT8" frameborder="0" allowfullscreen itemprop="video"></iframe>
                     <h4 class="text-c">🍺 Live</h4>
                      </figure>
       </div>
-      <div class="main__body__section--content">
+      <div class="main__body__section--content" itemscope itemtype="http://www.l0rdcafe.com/Blog">
         <h2 id="blog"><span class="icon--down">🤔</span>Thoughts<span class="icon--up">🤔</span></h2>
         
-          <h3><a href="/2017/04/27/2017-04-27-intro/">💭 Introduction 💭</a></h3>
-          <small>April 27, 2017</small>
+          <h3 itemprop="name"><a href="/2017/04/27/2017-04-27-intro/" itemprop="url">💭 Introduction 💭</a></h3>
+          <small itemprop="datePublished">April 27, 2017</small>
           
-          <h3><a href="/2017/04/27/2017-04-27-mac-setup/">💭 Setup Your Macbook Pro To Be More Efficient for Editing Code (For New Web Devs) 💭</a></h3>
-          <small>April 27, 2017</small>
+          <h3 itemprop="name"><a href="/2017/04/27/2017-04-27-mac-setup/" itemprop="url">💭 Setup Your Macbook Pro To Be More Efficient for Editing Code (For New Web Devs) 💭</a></h3>
+          <small itemprop="datePublished">April 27, 2017</small>
           
-          <h3><a href="/2017/04/27/2017-04-27-open-source/">💭 My First Open Source Contribution 💭</a></h3>
-          <small>April 27, 2017</small>
+          <h3 itemprop="name"><a href="/2017/04/27/2017-04-27-open-source/" itemprop="url">💭 My First Open Source Contribution 💭</a></h3>
+          <small itemprop="datePublished">April 27, 2017</small>
           
-          <h3><a href="/2017/05/08/2017-05-08-sketch-graphic-design/">💭 Hacking Graphic Design or Sketch for Devs 💭</a></h3>
-          <small>May 08, 2017</small>
+          <h3 itemprop="name"><a href="/2017/05/08/2017-05-08-sketch-graphic-design/" itemprop="url">💭 Hacking Graphic Design or Sketch for Devs 💭</a></h3>
+          <small itemprop="datePublished">May 08, 2017</small>
           
-          <h3><a href="/2017/06/01/2017-06-01-programming-js/">💭 Programming With JavaScript, Or How I Learned to Stop Worrying And Love The Debugger 💭</a></h3>
-          <small>June 01, 2017</small>
+          <h3 itemprop="name"><a href="/2017/06/01/2017-06-01-programming-js/" itemprop="url">💭 Programming With JavaScript, Or How I Learned to Stop Worrying And Love The Debugger 💭</a></h3>
+          <small itemprop="datePublished">June 01, 2017</small>
           
       </div>
     </div>

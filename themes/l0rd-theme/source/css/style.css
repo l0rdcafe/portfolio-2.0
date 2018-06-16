@@ -76,6 +76,9 @@ body {
   .main__banner {
     height: 100vh;
     background: $primary-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     a {
       color: $yellow;
@@ -127,7 +130,7 @@ body {
       @media (max-width: $break-large) {
         .main__banner__wrapper__logo {
           width: 65%;
-          margin-bottom: -0.5rem;
+          padding-top: 4.5%;
         }
       }
 
@@ -151,7 +154,7 @@ body {
       list-style: none;
       height: 8%;
       text-align: center;
-      align-items: center;
+      margin-bottom: 0;
       width: 100%;
       float: right;
 
@@ -160,6 +163,7 @@ body {
         display: none;
         text-align: left;
         margin-left: 0.5rem;
+        margin-top: 2.5%;
         width: 30%;
 
         @media (min-width: $break-lrg) {
@@ -182,6 +186,7 @@ body {
         .main__banner__list__logo {
           margin-left: 2.5rem;
           flex: 4;
+          margin-top: 0;
         }
 
         .main__banner__list__item {
@@ -594,7 +599,7 @@ body {
 .footer,
 footer {
   width: 100%;
-  padding: 1% 0;
+  padding: 0.5% 0;
   font-size: 1.25rem;
   background-color: $black;
   position: relative;
@@ -628,6 +633,7 @@ footer {
     flex: 1;
     display: flex;
     justify-content: center;
+    margin-bottom: 0;
 
     a {
       color: $secondary-text-color;

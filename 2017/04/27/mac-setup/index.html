@@ -67,43 +67,43 @@
 <h4 id="itrm">iTerm2</h4>
 
 <p>If you’re still using the default <strong>Mac Terminal</strong>, bin that instantly and download <a href="https://iterm2.com/" target="_blank" rel="noopener">iTerm2</a>. Press <strong>Cmd-N</strong>, instant improvement, right?</p>
-<p><a href="https://www.iterm2.com/" target="_blank" rel="noopener">iTerm2</a> unlike <strong>Terminal</strong>, is very customizable. So give the preferences a look and toy with the colors. Additionally, you can download <a href="http://iterm2colorschemes.com/" target="_blank" rel="noopener">preset color schemes</a>.<img src="colors.gif" alt=""></p>
+<p><a href="https://www.iterm2.com/" target="_blank" rel="noopener">iTerm2</a> unlike <strong>Terminal</strong>, is very customizable. So give the preferences a look and toy with the colors. Additionally, you can download <a href="http://iterm2colorschemes.com/" target="_blank" rel="noopener">preset color schemes</a>.<img src="colors.gif" alt="iTerm2 changing color theme gif"></p>
 <h4 id="brew">Homebrew</h4>
 
 <p>Before you go any further, you should install <a href="https://brew.sh/" target="_blank" rel="noopener">Homebrew</a>. It’ll give you quick access to a plethora of software by running simple commands, dubbed as the missing package manager for macOS. Copy/paste the command into your terminal.</p>
 <h4 id="node">Node</h4>
 
 <p>Up next is <a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node,</a> which after installing <a href="https://brew.sh/" target="_blank" rel="noopener">Homebrew</a> becomes a much simpler task. Run <code>brew install node</code>. Now, run <code>node -v</code> to see if it’s installed, and then also <code>npm -v</code>. If it is, you should see something similar to this.</p>
-<p><img src="node.png" alt=""></p>
+<p><img src="node.png" alt="node version print in terminal"></p>
 <h4 id="tldr">Easier to read Manual Pages</h4>
 
 <p>If you know some basic <strong>UNIX command line</strong> and know about the <code>man</code> pages, which are notoriously dizzying to read, then you should start off by installing <a href="https://github.com/tldr-pages/tldr" target="_blank" rel="noopener">tldr</a>. Simply run <code>sudo npm install –g tldr</code>, then run <code>tldr echo</code> to see if it works. The <code>sudo</code> prefix might not be necessary, depending on your admin preferences. But if you run the command without it and returns an error, then it will be.</p>
 <h4 id="zsh">Shell Setup with Prezto</h4>
 
 <p>The default <strong>Shell</strong> is <code>.bash</code>, which isn’t necessarily the most efficient. You can tell which <strong>Shell</strong> is running by looking at the top of your terminal window.</p>
-<p><img src="bash.png" alt=""></p>
+<p><img src="bash.png" alt="bash shell terminal window top"></p>
 <p>That’s where <a href="https://github.com/sorin-ionescu/prezto" target="_blank" rel="noopener">Prezto</a> comes into play, a <code>.zsh</code> <strong>framework</strong> enriching the command line interface with <strong>aliases</strong>, <strong>sane defaults</strong>, <strong>prompt themes</strong> and most importantly <strong>auto completion</strong>; a true savior!</p>
 <p>Run <code>zsh</code> to start a <code>.zsh</code> session and follow the installation instructions carefully.</p>
 <p>As with most things, you’ll need to customize your <a href="https://github.com/sorin-ionescu/prezto" target="_blank" rel="noopener">Prezto</a> modules. So go to your home directory by running <code>cd</code>, then run <code>ls -a</code> and check to see if there’s a <code>.zpreztorc</code>. If there is and there should be, open that file in your <strong>text editor</strong>and make sure the modules from line 26 to 44 are in the following order.</p>
-<p><img src="assets/module.png" alt=""></p>
+<p><img src="module.png" alt="prezto modules config in Atom settings"></p>
 <h4 id="j">Faster Directory Navigation</h4>
 
 <p>Moreover, if you’ve used the <code>cd</code> command enough, you’ll know how consuming directory navigation can be. Run <code>brew install fasd</code> and now you can use the command <code>j</code> with any <strong>directory</strong> that you’ve visited before as its <strong>argument</strong> to navigate instantly there. Here’s an example of it in action.</p>
-<p><img src="fasd.gif" alt=""></p>
+<p><img src="fasd.gif" alt="directory hopping using fasd gif"></p>
 <h4 id="brwsr">Efficient CSS Workflow</h4>
 
 <p>Writing <strong>CSS</strong> can be a pain when you have to refresh the page on your browser with each saved change. That’s why <a href="https://browsersync.io/" target="_blank" rel="noopener">browser-sync</a> exists, run <code>sudo npm install –g browser-sync</code>, then <code>tldr browser-sync</code> <a href="#src">(Aha!)</a> for examples on how to use it.</p>
-<p><img src="browser-sync.gif" alt=""></p>
+<p><img src="browser-sync.gif" alt="browser-sync demo gif"></p>
 <h4 id="lntrs">Linters and Text Editor Plugins</h4>
 
 <p>Now it’s time to upgrade your <strong>text editor</strong>. Personally, I picked <a href="https://atom.io/" target="_blank" rel="noopener">Atom</a> at the start and have been using it ever since, so this is going to be catered to that but feel free to look up equivalent upgrades for whatever <strong>text editor</strong> you end up choosing. <strong>Linters</strong> are packages installed in a <strong>text editor</strong> that, given specific settings will clean up your code and pick up on any syntax errors. This is a pretty long list, since you have to install <strong>linters</strong> for each language. However, I highly advise against copy/pasting and to actually type in each command.</p>
 <p><code class="main__body__content__code">apm install linter-csslint<br>apm install linter-htmlhint<br>apm install linter-jsonlint<br>apm install linter-scss-lint<br>apm install linter-markdown<br>apm install linter-eslint<br>apm install linter-stylefmt<br>apm install linter-write-good<br>apm install atom-beautify<br>apm install git-diff<br>apm install jquery<br>apm install pigments<br>apm install file-type-icons<br>apm install open-recent</code></p>
 <p>You will need to customize some of these plugins. Firstly, create a <code>~/.eslintrc</code> file and write the following in it.</p>
-<p><img src="eslintrc.png" alt=""></p>
+<p><img src="eslintrc.png" alt="eslintrc file setup"></p>
 <p>Then your beautify settings should match those in the following image.</p>
-<p><img src="beautify.png" alt=""></p>
+<p><img src="beautify.png" alt="Atom text editor beautify plugin settings"></p>
 <p>You’ll also need to tick the box for Use global ESLint installation as well as specify the <strong>.eslintrc Path</strong> to the <code>~/.eslintrc</code> file created earlier. You can implement these changes in the linter-eslint plugin settings as shown below. Additionally, you should run <code>npm get prefix</code> and input the result into the <strong>Global Node Installation Path</strong> box.</p>
-<p><img src="stylelint2.png" alt=""></p>
+<p><img src="stylelint2.png" alt="Atom text editor style lint settings"></p>
 <h4 id="autop">Autoprefixer</h4>
 
 <p>Beyond <strong>linters</strong>, an <strong>autoprefixer</strong> will be your new best friend. You’ll never have to hardcode <strong>vendor prefixes</strong> again. By simply running <code>apm install autoprefixer</code> and setting it to prefix on save, you can simply code, save and <strong>vendor prefixes</strong> will be prefixed automagically.</p>

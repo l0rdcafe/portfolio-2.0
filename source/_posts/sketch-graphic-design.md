@@ -4,6 +4,7 @@ date: 2017-05-08
 tags: null
 description: Sketch App tutorial by l0rdcafe introducing graphic design basics for web devs outlining benefits for developers in using Sketch including easily exportable CSS as well as referencing a couple of Lynda courses teaching Sketch App basics, drawing Vector Graphics with bezier curves, creating styles guides and asset libraries and designing proper user experience.
 og_description: Basic graphic design for web developers post using Sketch App, outlining its benefits and going through my experience of learning Sketch through Lynda courses concerning topics such as bezier curves, vector graphics, style guides and UX.
+twitter_description: Graphic design for web developers using Sketch App, going through my personal experience of learning Sketch concerning topics such as bezier curves, vector graphics and style guides.
 ---
 
 Hey <span class="main__body__content__span">hackers</span>, <span class="main__body__content__span">designers</span> and <span class="main__body__content__span">design hackers.</span> It's your boy [l0rdcafe](mailto:me@l0rdcafe.com). This post is a brief overview of my experience learning graphic design basics with [Sketch.](https://www.sketchapp.com/) I'll be going through what I learned, built, and how useful these new skills are.

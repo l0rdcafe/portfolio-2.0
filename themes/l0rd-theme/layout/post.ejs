@@ -1,7 +1,7 @@
 <%- partial('_partial/nav') %>
-<div class="main__body">
-<div class="main__body__section--post" itemscope itemtype="http://www.l0rdcafe.com/BlogPosting"><h1 itemprop="name">💭 <%- page.title %> 💭</h1>
-<p itemprop="articleBody"><%- page.content %></>
-<small itemprop="datePublished"><%- page.date.format('MMMM DD, YYYY') %></small>
-</div>
-</div>
+<section class="main__body">
+<article role="article" class="main__body__section--post" itemscope itemtype="http://www.l0rdcafe.com/BlogPosting"><h1 itemprop="name">💭 <%= page.title %> 💭</h1>
+<p itemprop="articleBody"><%- page.content %></p>
+<small itemprop="datePublished"><%= page.date.format('MMMM DD, YYYY') %></small>
+</article>
+</section>

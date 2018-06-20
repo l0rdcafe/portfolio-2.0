@@ -4,6 +4,7 @@ date: 2017-04-27 10:00:00
 tags: null
 description: Introductory post detailing self-taught beginnings of l0rdcafe in the front end development path using resources such as Michael Hartl's Learn Enough series, the Odin Project's web dev track, EloquentJS and commenting on technologies like SASS preprocessors, iTerm2 command line terminal, Atom text editor and my personal experience with building my own CSS framework combining Normalize, Skeleton, clrs, font awesome libraries into cc-ss.
 og_description: Introductory post detailing self-taught beginnings in front end development path using resources such as Michael Hartl's Learn Enough series, EloquentJS and  technologies like SASS preprocessors, iTerm2 command line terminal,and building my own CSS framework titled cc-ss.
+twitter_description: Introductory post about beginnings in front end development with resources such as M. Hartl's Learn Enough series, EloquentJS and technologies like iTerm2 terminal, and building a CSS framework.
 ---
 
 Hello, world. At the turn of the year, my hacker buddy [jellyc0la](https://github.com/jellyc0la) linked me a series of introductory tutorials titled [Learn Enough](http://learnenough.com/), and ever since I've been on a deep dive into the expanding universe of web development. He mentored me through a well-crafted curriculum, starting with front-end web development, and relentlessly emphasizing learning the fundamentals of concepts deeply.

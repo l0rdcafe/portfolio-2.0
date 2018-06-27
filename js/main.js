@@ -2,13 +2,23 @@ const nav = document.querySelector("#nav");
 const sticky = nav.offsetTop;
 
 function stickNav() {
-  if (window.pageYOffset >= sticky) {
+  const top = window.pageYOffset;
+  const isSticky = nav.classList.contains("sticky");
+  if (top >= sticky) {
     document.querySelector(".main__banner__list__logo").style.display = "block";
+    nav.classList.remove("slideInDown");
     nav.classList.add("sticky");
-  } else {
+    nav.className += " animated bounceInLeft";
+  } else if (isSticky) {
     document.querySelector(".main__banner__list__logo").style.display = "none";
     nav.classList.remove("sticky");
+    nav.classList.remove("bounceInLeft");
+    nav.classList.add("slideInDown");
   }
 }
 
-window.addEventListener("scroll", stickNav);
+function scrollListener() {
+  window.addEventListener("scroll", stickNav);
+}
+
+document.addEventListener("DOMContentLoaded", scrollListener);

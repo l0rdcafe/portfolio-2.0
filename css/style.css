@@ -330,13 +330,13 @@ body {
       h6 {
         transition: opacity 0.2s;
       }
+
+      a {
+        display: block;
+      }
   
-      a:hover img,
-      a:hover p,
-      a:hover h4,
-      a:active img,
-      a:active p,
-      a:active h4 {
+      a:hover,
+      a:active {
         opacity: 0.5;
       }
   

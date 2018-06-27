@@ -4,7 +4,7 @@ const sticky = nav.offsetTop;
 function stickNav() {
   const top = window.pageYOffset;
   const isSticky = nav.classList.contains("sticky");
-  if (top >= sticky) {
+  if (top > sticky) {
     document.querySelector(".main__banner__list__logo").style.display = "block";
     nav.classList.remove("slideInDown");
     nav.classList.add("sticky");

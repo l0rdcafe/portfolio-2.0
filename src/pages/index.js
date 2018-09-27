@@ -345,12 +345,13 @@ class IndexPage extends React.Component {
     function stickNav() {
       const top = window.pageYOffset;
       const isSticky = nav.classList.contains("sticky");
+      const isHome = window.location.pathname === "/";
       if (top > sticky) {
         document.querySelector(".main__banner__list__logo").style.display = "block";
         nav.classList.add("sticky");
         nav.classList.remove("fadeIn");
         nav.className += " animated bounceInLeft";
-      } else if (isSticky) {
+      } else if (isSticky && isHome) {
         document.querySelector(".main__banner__list__logo").style.display = "none";
         nav.classList.remove("sticky");
         nav.classList.remove("bounceInLeft");

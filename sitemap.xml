@@ -1,46 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <url>
-    <loc>http://www.l0rdcafe.com/2018/07/05/perf-deploys/</loc>
-    
-    <lastmod>2018-07-05T17:37:23.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.l0rdcafe.com/2017/04/27/mac-setup/</loc>
-    
-    <lastmod>2018-06-19T00:16:01.147Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.l0rdcafe.com/2017/06/01/programming-js/</loc>
-    
-    <lastmod>2018-06-18T23:19:46.773Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.l0rdcafe.com/2017/05/08/sketch-graphic-design/</loc>
-    
-    <lastmod>2018-06-18T22:59:11.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.l0rdcafe.com/2017/04/27/open-source/</loc>
-    
-    <lastmod>2018-06-18T22:52:05.038Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.l0rdcafe.com/2017/04/27/intro/</loc>
-    
-    <lastmod>2018-06-18T22:50:11.386Z</lastmod>
-    
-  </url>
-  
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>http://www.l0rdcafe.com/intro</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://www.l0rdcafe.com/open-source</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://www.l0rdcafe.com/mac-setup</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://www.l0rdcafe.com/programming-js</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://www.l0rdcafe.com/sketch-graphic-design</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://www.l0rdcafe.com/perf-deploys</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://www.l0rdcafe.com/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>

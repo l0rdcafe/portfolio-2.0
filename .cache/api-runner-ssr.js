@@ -5,6 +5,9 @@ var plugins = [{
       plugin: require('/Users/Lord/repos/portfolio-2.0/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
       options: {"plugins":[]},
     },{
+      plugin: require('/Users/Lord/repos/portfolio-2.0/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
       plugin: require('/Users/Lord/repos/portfolio-2.0/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"name":"gatsby-starter-default","short_name":"starter","start_url":"/","theme_color":"#3d9970","display":"minimal-ui"},
     }]

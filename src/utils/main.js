@@ -20,4 +20,4 @@ function convertDate(date) {
   return `${month} ${day}, ${year}`;
 }
 
-export { convertDate };
+export default convertDate;

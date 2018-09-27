@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Layout from "../components/layout";
 import Nav from "../components/nav";
 import Footer from "../components/footer";
-import { convertDate } from "../utils/main";
+import convertDate from "../utils/main";
 
 const PostWrapper = styled.div`
   .main__body__section--post {

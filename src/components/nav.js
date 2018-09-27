@@ -95,7 +95,7 @@ Nav.propTypes = {
 };
 
 Nav.defaultProps = {
-  sticky: ""
+  sticky: false
 };
 
 export default Nav;

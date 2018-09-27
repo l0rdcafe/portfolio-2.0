@@ -5,8 +5,7 @@ import PropTypes from "prop-types";
 import Layout from "../components/layout";
 import Nav from "../components/nav";
 import Footer from "../components/footer";
-import "../utils/scroller";
-import { convertDate } from "../utils/main";
+import convertDate from "../utils/main";
 import l0rdcafe from "../assets/l0rdcafe.jpg";
 import l0rd from "../assets/l0rd.jpg";
 import readme from "../assets/readme.png";
@@ -334,317 +333,358 @@ const Main = styled.div`
   }
 `;
 
-const IndexPage = ({ data }) => (
-  <Layout
-    description={metadata.description}
-    og_type={metadata.og_type}
-    og_title={metadata.og_title}
-    og_description={metadata.og_description}
-    twitter_title={metadata.twitter_title}
-    twitter_description={metadata.twitter_description}
-  >
-    <Banner>
-      <section className="main__banner" itemScope itemType="http://www.l0rdcafe.com/Person">
-        <h1 className="main__banner__wrapper animated tada">
-          <Link to="/" href="/" role="link" itemprop="url">
-            <span role="img" aria-label="crown emoji" className="crown">
-              👑
-            </span>{" "}
-            <img className="main__banner__wrapper__logo" src={l0rdcafe} alt="l0rdcafe logo" />{" "}
-            <span role="img" aria-label="crown emoji" className="crown">
-              👑
-            </span>
-          </Link>
-        </h1>
-        <img className="l0rd x-centered" src={l0rd} alt="Ismail Arafa in Cairo, Egypt circa 2013" itemProp="photo" />
-        <BannerParagraph>
-          <span itemProp="name">Ismail Arafa</span> is a junior{" "}
-          <Link href="/#projects" to="/#projects">
-            web developer{" "}
-            <span role="img" aria-label="laptop emoji">
-              💻
-            </span>
-          </Link>,{" "}
-          <Link href="/#music" to="/#music">
-            accomplished musician{" "}
-            <span role="img" aria-label="treble clef emoji">
-              🎼
-            </span>
-          </Link>, and a huge cheese 🧀 fiend.
-          <br />
-          <small>Based in Toronto, Canada</small>
-          <span className="main__banner__wrapper__span" role="img" aria-label="maple leaf emoji">
-            🍁
-          </span>
-        </BannerParagraph>
-        <Nav />
-      </section>
-    </Banner>
-    <Main>
-      <section className="main__body" role="main">
-        <article id="intro" className="main__body__section" itemScope itemType="http://www.l0rdcafe.com/Article">
-          <h2 itemProp="name">
-            <span className="icon--down" role="img" aria-label="camel emoji">
-              🐪
-            </span>{" "}
-            Story{" "}
-            <span className="icon--up" role="img" aria-label="canada flag emoji">
-              🇨🇦
-            </span>
-          </h2>
-          <p itemProp="articleBody">
-            Originally a desert dweller,{" "}
-            <a className="l0rd" href="mailto:me@l0rdcafe.com">
-              l0rdcafé
-            </a>{" "}
-            stumbled upon the art of coding one day and, eager to learn more, he traversed the Atlantic Ocean{" "}
-            <span role="img" aria-label="ocean wave emoji">
-              🌊
-            </span>{" "}
-            through a combination of camel back riding, telekinesis and sheer willpower.
-          </p>
-          <p>
-            After an arduous and tasking journey, he finally made his way to Canadian shores where he would pursue his
-            passions for melting cheese and crafting a myriad of web creations.
-          </p>
-        </article>
-      </section>
-      <section id="projects" className="main__body__section">
-        <h2>
-          <span role="img" aria-label="floppy disk emoji" className="icon--down">
-            💾
-          </span>{" "}
-          Projects{" "}
-          <span role="img" aria-label="floppy disk emoji" className="icon--up">
-            💾
-          </span>
-        </h2>
-        <figure
-          className="main__body__section__fig"
-          itemScope
-          itemType="http://www.l0rdcafe.com/CreativeWork"
-          role="group"
-        >
-          <a href="https://l0rdcafe.github.io/readme/" itemProp="url">
-            <img src={readme} alt="Spotify currently playing track information" itemProp="image" />
-            <h4 itemProp="name">Readme</h4>
-            <p itemProp="description">
-              Spotify OAuth sign in fetching currently playing information and Genius annotations.
-            </p>
-          </a>
-        </figure>
-        <figure
-          className="main__body__section__fig"
-          itemScope
-          itemType="http://www.l0rdcafe.com/CreativeWork"
-          role="group"
-        >
-          <a href="https://l0rdcafe.github.io/ubereaucracy/" itemProp="url">
-            <img src={uberpage} alt="Landing page of mock app Ubereaucracy" itemProp="image" />
-            <h4 itemProp="name">Ubereaucracy</h4>
-            <p itemProp="description">
-              A design and homepage for making paperwork easier in Egypt. Designed with Sketch App.
-            </p>
-          </a>
-        </figure>
-        <figure
-          className="main__body__section__fig"
-          itemScope
-          itemType="http://www.l0rdcafe.com/CreativeWork"
-          role="group"
-        >
-          <a href="https://github.com/l0rdcafe/branch-set/" itemProp="url">
-            <img src={branch} alt="Gif of bash script setting git remote branches" itemProp="image" />
-            <h4 itemProp="name">Branch Set</h4>
-            <p itemProp="description">Update all git remote branches in a directory.</p>
-          </a>
-        </figure>
-        <figure
-          className="main__body__section__fig"
-          itemScope
-          itemType="http://www.l0rdcafe.com/CreativeWork"
-          role="group"
-        >
-          <a href="https://github.com/l0rdcafe/async-strategies" itemProp="url">
-            <img src={asyncStrats} alt="Command line terminal iTerm2 showing two tasks in series" itemProp="image" />
-            <h4 itemProp="name">Async Strategies</h4>
-            <p itemProp="description">
-              Asynchronous JS strategies using promises, callbacks and async/await in serial and parallel.
-            </p>
-          </a>
-        </figure>
-        <figure
-          className="main__body__section__fig"
-          itemScope
-          itemType="http://www.l0rdcafe.com/CreativeWork"
-          role="group"
-        >
-          <a href="https://khamra.surge.sh/" itemProp="url">
-            <img src={khamra} alt="Map displaying marker for drinks venue" itemProp="image" />
-            <h4 itemProp="name">Khamra</h4>
-            <p itemProp="description">
-              Foursquare API and Mapbox-GL app finding drinks venues using geolocation and kilometer radius.
-            </p>
-          </a>
-        </figure>
-        <figure
-          className="main__body__section__fig"
-          itemScope
-          itemType="http://www.l0rdcafe.com/CreativeWork"
-          role="group"
-        >
-          <a href="https://l0rdcafe.github.io/dad-joke-gen/" itemProp="url">
-            <img src={dadjoke} alt="Dad joke app showing random joke and search field" itemProp="image" />
-            <h4 itemProp="name">Dad Jokez</h4>
-            <p itemProp="description">
-              Dad joke generator with random button and search field using icanhazdadjoke API.
-            </p>
-          </a>
-        </figure>
-        <figure
-          className="main__body__section__fig"
-          itemScope
-          itemType="http://www.l0rdcafe.com/CreativeWork"
-          role="group"
-        >
-          <a href="https://l0rdcafe.github.io/za7ma/" itemProp="url">
-            <img
-              src={za7ma}
-              alt="Graph data visualizer showing nodes and edges with color coding depending on edge cost"
-              itemProp="image"
-            />
-            <h4 itemProp="name">Za7ma</h4>
-            <p itemProp="description">Cairo traffic visualizer using SigmaJS with data from Bey2ollak API.</p>
-          </a>
-        </figure>
-        <figure
-          className="main__body__section__fig"
-          itemScope
-          itemType="http://www.l0rdcafe.com/CreativeWork"
-          role="group"
-        >
-          <a href="https://github.com/l0rdcafe/cc-ss" itemProp="url">
-            <img src={webpack} alt="Webpack demo showing framework build in iTerm2" itemProp="image" />
-            <h4 itemProp="name">CC-SS</h4>
-            <p itemProp="description">
-              CC-SS build setup including custom CSS framework, project templates and webpack config.
-            </p>
-          </a>
-        </figure>
-        <figure
-          className="main__body__section__fig"
-          itemScope
-          itemType="http://www.l0rdcafe.com/CreativeWork"
-          role="group"
-        >
-          <a href="https://l0rdcafe.github.io/foodmeup/" itemProp="url">
-            <img
-              src={foodmeup}
-              alt="Dragon fruit and strawberry poke ingredients list and nutritional facts"
-              itemProp="image"
-            />
-            <h4 itemProp="name">FoodMeUp</h4>
-            <p itemProp="description">Ingredient-based recipe search using Edamam API including nutritional facts.</p>
-          </a>
-        </figure>
-      </section>
-      <section className="main__body__section">
-        <h2 id="music">
-          <span role="img" aria-label="treble clef and electric guitar emojis" className="icon--down">
-            🎼 🎸
-          </span>{" "}
-          Music{" "}
-          <span role="img" aria-label="pint of beer and microphone emojis" className="icon--up">
-            🍺 🎙
-          </span>
-        </h2>
-        <h3>
-          EPs{" "}
-          <span role="img" aria-label="treble clef emoji">
-            🎼
-          </span>
-        </h3>
-        <figure className="main__body__section__fig" itemScope itemType="http://www.l0rdcafe.com/MusicRecording">
-          <iframe
-            scrolling="no"
-            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/137851268&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&visual=true"
-            itemProp="audio"
-            title="Soundcloud Player Dear Fady Album"
-            width="398"
-            frameBorder="no"
-          />
-          <h4 itemProp="name">
-            عزيزي فادي - "Dear Fady" (2014){" "}
-            <span role="img" aria-label="microphone emoji">
-              🎙
-            </span>
-          </h4>
-        </figure>
-        <figure className="main__body__section__fig" itemScope itemType="http://www.l0rdcafe.com/MusicRecording">
-          <iframe
-            scrolling="no"
-            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/171710141&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&visual=true"
-            itemProp="audio"
-            title="Soundcloud Player Heavy Indie Album"
-            width="398"
-            frameBorder="no"
-          />
-          <h4 itemProp="name">
-            إندي جامد - "Heavy Indie" (2014){" "}
-            <span role="img" aria-label="microphone emoji">
-              🎙
-            </span>
-          </h4>
-        </figure>
-        <figure className="main__body__section__fig" itemScope itemType="http://www.l0rdcafe.com/MusicRecording">
-          <iframe
-            scrolling="no"
-            src="https://www.youtube.com/embed/xNztF5wGrT8"
-            itemProp="video"
-            title="YouTube Player Live Performance"
-            width="400"
-            height="350"
-            frameBorder="no"
-          />
-          <h4 style={{ textAlign: "center" }}>
-            <span aria-label="pint of beer emoji" role="img">
-              🍺
-            </span>{" "}
-            Live
-          </h4>
-        </figure>
-      </section>
-      <section className="main__body__section--content" itemScope itemType="http://www.l0rdcafe.com/Blog">
-        <h2 id="blog">
-          <span role="img" aria-label="thinking emoji" className="icon--down">
-            🤔
-          </span>{" "}
-          Thoughts{" "}
-          <span role="img" aria-label="thinking emoji" className="icon--up">
-            🤔
-          </span>
-        </h2>
-        {data.allMarkdownRemark.edges.map(post => (
-          <React.Fragment>
-            <h3 itemProp="name" role="listitem" key={post.node.frontmatter.date}>
-              <Link to={post.node.frontmatter.path} href={post.node.frontmatter.path} itemprop="url" role="link">
-                <span role="img" aria-label="thought bubble emoji">
-                  💭
+class IndexPage extends React.Component {
+  componentDidMount() {
+    const nav = document.querySelector("#nav");
+
+    if (!nav) {
+      return;
+    }
+
+    const sticky = nav.offsetTop;
+    function stickNav() {
+      const top = window.pageYOffset;
+      const isSticky = nav.classList.contains("sticky");
+      if (top > sticky) {
+        document.querySelector(".main__banner__list__logo").style.display = "block";
+        nav.classList.add("sticky");
+        nav.classList.remove("fadeIn");
+        nav.className += " animated bounceInLeft";
+      } else if (isSticky) {
+        document.querySelector(".main__banner__list__logo").style.display = "none";
+        nav.classList.remove("sticky");
+        nav.classList.remove("bounceInLeft");
+        nav.classList.add("fadeIn");
+      }
+    }
+    window.addEventListener("scroll", stickNav);
+  }
+  render() {
+    const { data } = this.props;
+    return (
+      <Layout
+        description={metadata.description}
+        og_type={metadata.og_type}
+        og_title={metadata.og_title}
+        og_description={metadata.og_description}
+        twitter_title={metadata.twitter_title}
+        twitter_description={metadata.twitter_description}
+      >
+        <Banner>
+          <section className="main__banner" itemScope itemType="http://www.l0rdcafe.com/Person">
+            <h1 className="main__banner__wrapper animated tada">
+              <Link to="/" href="/" role="link" itemProp="url">
+                <span role="img" aria-label="crown emoji" className="crown">
+                  👑
                 </span>{" "}
-                {post.node.frontmatter.title}{" "}
-                <span role="img" aria-label="thought bubble emoji">
-                  💭
+                <img className="main__banner__wrapper__logo" src={l0rdcafe} alt="l0rdcafe logo" />{" "}
+                <span role="img" aria-label="crown emoji" className="crown">
+                  👑
                 </span>
               </Link>
+            </h1>
+            <img
+              className="l0rd x-centered"
+              src={l0rd}
+              alt="Ismail Arafa in Cairo, Egypt circa 2013"
+              itemProp="photo"
+            />
+            <BannerParagraph>
+              <span itemProp="name">Ismail Arafa</span> is a junior{" "}
+              <Link href="/#projects" to="/#projects">
+                web developer{" "}
+                <span role="img" aria-label="laptop emoji">
+                  💻
+                </span>
+              </Link>,{" "}
+              <Link href="/#music" to="/#music">
+                accomplished musician{" "}
+                <span role="img" aria-label="treble clef emoji">
+                  🎼
+                </span>
+              </Link>, and a huge cheese 🧀 fiend.
+              <br />
+              <small>Based in Toronto, Canada</small>
+              <span className="main__banner__wrapper__span" role="img" aria-label="maple leaf emoji">
+                🍁
+              </span>
+            </BannerParagraph>
+            <Nav />
+          </section>
+        </Banner>
+        <Main>
+          <section className="main__body" role="main">
+            <article id="intro" className="main__body__section" itemScope itemType="http://www.l0rdcafe.com/Article">
+              <h2 itemProp="name">
+                <span className="icon--down" role="img" aria-label="camel emoji">
+                  🐪
+                </span>{" "}
+                Story{" "}
+                <span className="icon--up" role="img" aria-label="canada flag emoji">
+                  🇨🇦
+                </span>
+              </h2>
+              <p itemProp="articleBody">
+                Originally a desert dweller,{" "}
+                <a className="l0rd" href="mailto:me@l0rdcafe.com">
+                  l0rdcafé
+                </a>{" "}
+                stumbled upon the art of coding one day and, eager to learn more, he traversed the Atlantic Ocean{" "}
+                <span role="img" aria-label="ocean wave emoji">
+                  🌊
+                </span>{" "}
+                through a combination of camel back riding, telekinesis and sheer willpower.
+              </p>
+              <p>
+                After an arduous and tasking journey, he finally made his way to Canadian shores where he would pursue
+                his passions for melting cheese and crafting a myriad of web creations.
+              </p>
+            </article>
+          </section>
+          <section id="projects" className="main__body__section">
+            <h2>
+              <span role="img" aria-label="floppy disk emoji" className="icon--down">
+                💾
+              </span>{" "}
+              Projects{" "}
+              <span role="img" aria-label="floppy disk emoji" className="icon--up">
+                💾
+              </span>
+            </h2>
+            <figure
+              className="main__body__section__fig"
+              itemScope
+              itemType="http://www.l0rdcafe.com/CreativeWork"
+              role="group"
+            >
+              <a href="https://l0rdcafe.github.io/readme/" itemProp="url">
+                <img src={readme} alt="Spotify currently playing track information" itemProp="image" />
+                <h4 itemProp="name">Readme</h4>
+                <p itemProp="description">
+                  Spotify OAuth sign in fetching currently playing information and Genius annotations.
+                </p>
+              </a>
+            </figure>
+            <figure
+              className="main__body__section__fig"
+              itemScope
+              itemType="http://www.l0rdcafe.com/CreativeWork"
+              role="group"
+            >
+              <a href="https://l0rdcafe.github.io/ubereaucracy/" itemProp="url">
+                <img src={uberpage} alt="Landing page of mock app Ubereaucracy" itemProp="image" />
+                <h4 itemProp="name">Ubereaucracy</h4>
+                <p itemProp="description">
+                  A design and homepage for making paperwork easier in Egypt. Designed with Sketch App.
+                </p>
+              </a>
+            </figure>
+            <figure
+              className="main__body__section__fig"
+              itemScope
+              itemType="http://www.l0rdcafe.com/CreativeWork"
+              role="group"
+            >
+              <a href="https://github.com/l0rdcafe/branch-set/" itemProp="url">
+                <img src={branch} alt="Gif of bash script setting git remote branches" itemProp="image" />
+                <h4 itemProp="name">Branch Set</h4>
+                <p itemProp="description">Update all git remote branches in a directory.</p>
+              </a>
+            </figure>
+            <figure
+              className="main__body__section__fig"
+              itemScope
+              itemType="http://www.l0rdcafe.com/CreativeWork"
+              role="group"
+            >
+              <a href="https://github.com/l0rdcafe/async-strategies" itemProp="url">
+                <img
+                  src={asyncStrats}
+                  alt="Command line terminal iTerm2 showing two tasks in series"
+                  itemProp="image"
+                />
+                <h4 itemProp="name">Async Strategies</h4>
+                <p itemProp="description">
+                  Asynchronous JS strategies using promises, callbacks and async/await in serial and parallel.
+                </p>
+              </a>
+            </figure>
+            <figure
+              className="main__body__section__fig"
+              itemScope
+              itemType="http://www.l0rdcafe.com/CreativeWork"
+              role="group"
+            >
+              <a href="https://khamra.surge.sh/" itemProp="url">
+                <img src={khamra} alt="Map displaying marker for drinks venue" itemProp="image" />
+                <h4 itemProp="name">Khamra</h4>
+                <p itemProp="description">
+                  Foursquare API and Mapbox-GL app finding drinks venues using geolocation and kilometer radius.
+                </p>
+              </a>
+            </figure>
+            <figure
+              className="main__body__section__fig"
+              itemScope
+              itemType="http://www.l0rdcafe.com/CreativeWork"
+              role="group"
+            >
+              <a href="https://l0rdcafe.github.io/dad-joke-gen/" itemProp="url">
+                <img src={dadjoke} alt="Dad joke app showing random joke and search field" itemProp="image" />
+                <h4 itemProp="name">Dad Jokez</h4>
+                <p itemProp="description">
+                  Dad joke generator with random button and search field using icanhazdadjoke API.
+                </p>
+              </a>
+            </figure>
+            <figure
+              className="main__body__section__fig"
+              itemScope
+              itemType="http://www.l0rdcafe.com/CreativeWork"
+              role="group"
+            >
+              <a href="https://l0rdcafe.github.io/za7ma/" itemProp="url">
+                <img
+                  src={za7ma}
+                  alt="Graph data visualizer showing nodes and edges with color coding depending on edge cost"
+                  itemProp="image"
+                />
+                <h4 itemProp="name">Za7ma</h4>
+                <p itemProp="description">Cairo traffic visualizer using SigmaJS with data from Bey2ollak API.</p>
+              </a>
+            </figure>
+            <figure
+              className="main__body__section__fig"
+              itemScope
+              itemType="http://www.l0rdcafe.com/CreativeWork"
+              role="group"
+            >
+              <a href="https://github.com/l0rdcafe/cc-ss" itemProp="url">
+                <img src={webpack} alt="Webpack demo showing framework build in iTerm2" itemProp="image" />
+                <h4 itemProp="name">CC-SS</h4>
+                <p itemProp="description">
+                  CC-SS build setup including custom CSS framework, project templates and webpack config.
+                </p>
+              </a>
+            </figure>
+            <figure
+              className="main__body__section__fig"
+              itemScope
+              itemType="http://www.l0rdcafe.com/CreativeWork"
+              role="group"
+            >
+              <a href="https://l0rdcafe.github.io/foodmeup/" itemProp="url">
+                <img
+                  src={foodmeup}
+                  alt="Dragon fruit and strawberry poke ingredients list and nutritional facts"
+                  itemProp="image"
+                />
+                <h4 itemProp="name">FoodMeUp</h4>
+                <p itemProp="description">
+                  Ingredient-based recipe search using Edamam API including nutritional facts.
+                </p>
+              </a>
+            </figure>
+          </section>
+          <section className="main__body__section">
+            <h2 id="music">
+              <span role="img" aria-label="treble clef and electric guitar emojis" className="icon--down">
+                🎼 🎸
+              </span>{" "}
+              Music{" "}
+              <span role="img" aria-label="pint of beer and microphone emojis" className="icon--up">
+                🍺 🎙
+              </span>
+            </h2>
+            <h3>
+              EPs{" "}
+              <span role="img" aria-label="treble clef emoji">
+                🎼
+              </span>
             </h3>
-            <small itemProp="datePublished">{convertDate(post.node.frontmatter.date)}</small>
-          </React.Fragment>
-        ))}
-      </section>
-    </Main>
-    <Footer />
-  </Layout>
-);
+            <figure className="main__body__section__fig" itemScope itemType="http://www.l0rdcafe.com/MusicRecording">
+              <iframe
+                scrolling="no"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/137851268&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&visual=true"
+                itemProp="audio"
+                title="Soundcloud Player Dear Fady Album"
+                width="398"
+                frameBorder="no"
+              />
+              <h4 itemProp="name">
+                عزيزي فادي - "Dear Fady" (2014){" "}
+                <span role="img" aria-label="microphone emoji">
+                  🎙
+                </span>
+              </h4>
+            </figure>
+            <figure className="main__body__section__fig" itemScope itemType="http://www.l0rdcafe.com/MusicRecording">
+              <iframe
+                scrolling="no"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/171710141&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&visual=true"
+                itemProp="audio"
+                title="Soundcloud Player Heavy Indie Album"
+                width="398"
+                frameBorder="no"
+              />
+              <h4 itemProp="name">
+                إندي جامد - "Heavy Indie" (2014){" "}
+                <span role="img" aria-label="microphone emoji">
+                  🎙
+                </span>
+              </h4>
+            </figure>
+            <figure className="main__body__section__fig" itemScope itemType="http://www.l0rdcafe.com/MusicRecording">
+              <iframe
+                scrolling="no"
+                src="https://www.youtube.com/embed/xNztF5wGrT8"
+                itemProp="video"
+                title="YouTube Player Live Performance"
+                width="400"
+                height="350"
+                frameBorder="no"
+              />
+              <h4 style={{ textAlign: "center" }}>
+                <span aria-label="pint of beer emoji" role="img">
+                  🍺
+                </span>{" "}
+                Live
+              </h4>
+            </figure>
+          </section>
+          <section className="main__body__section--content" itemScope itemType="http://www.l0rdcafe.com/Blog">
+            <h2 id="blog">
+              <span role="img" aria-label="thinking emoji" className="icon--down">
+                🤔
+              </span>{" "}
+              Thoughts{" "}
+              <span role="img" aria-label="thinking emoji" className="icon--up">
+                🤔
+              </span>
+            </h2>
+            {data.allMarkdownRemark.edges.map(post => (
+              <React.Fragment key={post.node.frontmatter.date}>
+                <h3 itemProp="name" role="listitem">
+                  <Link to={post.node.frontmatter.path} href={post.node.frontmatter.path} itemProp="url" role="link">
+                    <span role="img" aria-label="thought bubble emoji">
+                      💭
+                    </span>{" "}
+                    {post.node.frontmatter.title}{" "}
+                    <span role="img" aria-label="thought bubble emoji">
+                      💭
+                    </span>
+                  </Link>
+                </h3>
+                <small itemProp="datePublished">{convertDate(post.node.frontmatter.date)}</small>
+              </React.Fragment>
+            ))}
+          </section>
+        </Main>
+        <Footer />
+      </Layout>
+    );
+  }
+}
 
 IndexPage.propTypes = {
   data: PropTypes.shape({

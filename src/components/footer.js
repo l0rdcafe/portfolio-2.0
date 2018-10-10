@@ -4,7 +4,6 @@ import styled from "styled-components";
 const FooterWrapper = styled.div`
   .footer {
     width: 100%;
-    padding: 0.5% 0;
     font-size: 1rem;
     background-color: #111;
     position: relative;
@@ -27,6 +26,7 @@ const FooterWrapper = styled.div`
   .footer__body {
     width: 100%;
     height: 100%;
+    padding: 0.5% 0;
     display: flex;
     justify-content: center;
     align-items: center;

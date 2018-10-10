@@ -16,6 +16,10 @@ const NavWrapper = styled.div`
 
     a {
       font-size: 1.25rem;
+
+      @media (max-width: 650px) {
+        font-size: 0.75rem;
+      }
     }
   }
 
@@ -23,15 +27,17 @@ const NavWrapper = styled.div`
     display: block;
     margin: 0 1.5rem;
     margin-right: 5%;
-    height: 9vh;
+    padding: 1% 0;
+    height: 5vh;
     border-style: none;
 
     @media (max-width: 650px) {
       width: 30%;
       margin: 0;
-      margin-top: 0.75rem;
-      margin-left: 0.25rem;
-      height: 5vh;
+      margin-top: 0.85rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      height: 3.5vh;
     }
   }
 
@@ -48,6 +54,10 @@ const NavWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 650px) {
+      font-size: 0.25rem;
+    }
   }
 
   .main__banner__list__item:hover {

@@ -39,16 +39,21 @@ const Banner = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
   }
 
   .main__banner__wrapper {
     animation-delay: 0.5s;
-    padding: 1%;
-    padding-top: 2%;
+    padding: 0 0.5%;
     text-align: center;
     margin-bottom: 0.25%;
     font-size: 5.25rem;
     margin: 0;
+
+    @media (max-width: 650px) {
+      font-size: 4.5rem;
+      margin-bottom: 5%;
+    }
   }
 
   .main__banner__wrapper__logo {
@@ -57,7 +62,7 @@ const Banner = styled.div`
     border-style: none;
 
     @media (max-width: 650px) {
-      width: 55%;
+      width: 60%;
     }
   }
 
@@ -72,7 +77,7 @@ const Banner = styled.div`
     margin: 0;
 
     @media (max-width: 650px) {
-      max-width: 100%;
+      max-width: 80%;
     }
   }
 
@@ -90,8 +95,8 @@ const Banner = styled.div`
     top: 5px;
 
     @media (max-width: 650px) {
-      font-size: 2rem;
-      top: 0;
+      font-size: 1.75rem;
+      top: 10px;
     }
   }
 `;
@@ -103,7 +108,8 @@ const BannerParagraph = styled.p`
   font-size: 2rem;
 
   @media (max-width: 650px) {
-    font-size: 1.25rem;
+    font-size: 1rem;
+    letter-spacing: 0.025rem;
   }
 
   a {
@@ -117,10 +123,10 @@ const BannerParagraph = styled.p`
 
   small {
     opacity: 0.7;
-    font-size: 1.75rem;
+    font-size: 1.25rem;
 
     @media (max-width: 650px) {
-      font-size: 1rem;
+      font-size: 0.75rem;
     }
   }
 
@@ -224,6 +230,7 @@ const Main = styled.div`
       display: block;
       background: transparent;
       transition: opacity 0.2s;
+      color: #000;
 
       &:hover,
       &:active {
@@ -246,6 +253,7 @@ const Main = styled.div`
       letter-spacing: -0.1rem;
       font-weight: 300;
       margin-bottom: 0;
+      color: #000;
 
       @media (max-width: 650px) {
         font-size: 1.25rem;
@@ -304,8 +312,8 @@ const Main = styled.div`
       letter-spacing: -0.075rem;
 
       @media (max-width: 650px) {
-        font-size: 1.25rem;
-        letter-spacing: -0.005rem;
+        font-size: 1rem;
+        letter-spacing: -0.015rem;
       }
 
       a {
@@ -391,7 +399,7 @@ class IndexPage extends React.Component {
               itemProp="photo"
             />
             <BannerParagraph>
-              <span itemProp="name">Ismail Arafa</span> is a junior{" "}
+              <span itemProp="name">Ismail Arafa</span> is a{" "}
               <Link href="/#projects" to="/#projects">
                 web developer{" "}
                 <span role="img" aria-label="laptop emoji">
@@ -663,7 +671,7 @@ class IndexPage extends React.Component {
                 🤔
               </span>
             </h2>
-            {data.allMarkdownRemark.edges.map(post => (
+            {data.allMarkdownRemark.edges.reverse().map(post => (
               <React.Fragment key={post.node.frontmatter.date}>
                 <h3 itemProp="name" role="listitem">
                   <Link to={post.node.frontmatter.path} href={post.node.frontmatter.path} itemProp="url" role="link">

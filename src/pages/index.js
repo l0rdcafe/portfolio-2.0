@@ -44,15 +44,14 @@ const Banner = styled.div`
 
   .main__banner__wrapper {
     animation-delay: 0.5s;
-    padding: 0 0.5%;
     text-align: center;
-    margin-bottom: 0.25%;
     font-size: 5.25rem;
     margin: 0;
 
     @media (max-width: 650px) {
       font-size: 4.5rem;
       margin-bottom: 5%;
+      padding: 0 2%;
     }
   }
 
@@ -62,7 +61,7 @@ const Banner = styled.div`
     border-style: none;
 
     @media (max-width: 650px) {
-      width: 60%;
+      width: 50%;
     }
   }
 
@@ -72,21 +71,13 @@ const Banner = styled.div`
   }
 
   .l0rd {
-    max-width: 22%;
+    width: 25%;
     border-radius: 50%;
     margin: 0;
 
     @media (max-width: 650px) {
-      max-width: 80%;
+      width: 80%;
     }
-  }
-
-  h1 {
-    line-height: 1.2;
-    letter-spacing: -0.45rem;
-    font-weight: 300;
-    font-family: "Space Mono", monospace;
-    color: #3d9970;
   }
 
   .crown {
@@ -104,12 +95,13 @@ const Banner = styled.div`
 const BannerParagraph = styled.p`
   text-align: center;
   color: #fff;
-  padding: 2% 6%;
+  padding: 0 8%;
   font-size: 2rem;
+  margin: 0;
 
   @media (max-width: 650px) {
     font-size: 1rem;
-    letter-spacing: 0.025rem;
+    letter-spacing: 0.035rem;
   }
 
   a {
@@ -160,19 +152,7 @@ const Main = styled.div`
       font-size: 3.75rem;
       letter-spacing: -0.125rem;
       font-weight: 400;
-
-      &:hover .icon--up,
-      &:hover .icon--down {
-        opacity: 1;
-        -webkit-transition: -webkit-transform 1200ms opacity 800ms;
-        transition: -webkit-transform 1200ms opacity 800ms;
-        transition: transform 1200ms opacity 800ms;
-        transition: transform 1200ms opacity 800ms, -webkit-transform 1200ms opacity 800ms;
-        -webkit-transform: translateZ(0) translateY(0);
-        transform: translateZ(0) translateY(0);
-        -webkit-transition-delay: 800ms, 400ms;
-        transition-delay: 800ms, 400ms;
-      }
+      color: #000;
 
       @media (max-width: 650px) {
         font-size: 2.25rem;
@@ -194,24 +174,6 @@ const Main = styled.div`
     @media (max-width: 650px) {
       font-size: 1.2rem;
     }
-  }
-
-  .icon--up,
-  .icon--down {
-    display: inline-block;
-    opacity: 0;
-    -webkit-transition: 700ms;
-    transition: 700ms;
-  }
-
-  .icon--up {
-    -webkit-transform: translateZ(0) translateY(-6rem);
-    transform: translateZ(0) translateY(-6rem);
-  }
-
-  .icon--down {
-    -webkit-transform: translateZ(0) translateY(6rem);
-    transform: translateZ(0) translateY(6rem);
   }
 
   .main__body__section__fig {
@@ -253,7 +215,7 @@ const Main = styled.div`
       letter-spacing: -0.1rem;
       font-weight: 300;
       margin-bottom: 0;
-      color: #000;
+      color: #3d9970;
 
       @media (max-width: 650px) {
         font-size: 1.25rem;
@@ -289,19 +251,6 @@ const Main = styled.div`
 
       @media (max-width: 650px) {
         font-size: 1.75rem;
-      }
-
-      &:hover .icon--up,
-      &:hover .icon--down {
-        opacity: 1;
-        -webkit-transition: -webkit-transform 1200ms opacity 800ms;
-        transition: -webkit-transform 1200ms opacity 800ms;
-        transition: transform 1200ms opacity 800ms;
-        transition: transform 1200ms opacity 800ms, -webkit-transform 1200ms opacity 800ms;
-        -webkit-transform: translateZ(0) translateY(0);
-        transform: translateZ(0) translateY(0);
-        -webkit-transition-delay: 800ms, 400ms;
-        transition-delay: 800ms, 400ms;
       }
     }
 
@@ -392,12 +341,7 @@ class IndexPage extends React.Component {
                 </span>
               </Link>
             </h1>
-            <img
-              className="l0rd x-centered"
-              src={l0rd}
-              alt="Ismail Arafa in Cairo, Egypt circa 2013"
-              itemProp="photo"
-            />
+            <img className="l0rd" src={l0rd} alt="Ismail Arafa in Cairo, Egypt circa 2013" itemProp="photo" />
             <BannerParagraph>
               <span itemProp="name">Ismail Arafa</span> is a{" "}
               <Link href="/#projects" to="/#projects">
@@ -425,11 +369,11 @@ class IndexPage extends React.Component {
           <section className="main__body" role="main">
             <article id="intro" className="main__body__section" itemScope itemType="http://www.l0rdcafe.com/Article">
               <h2 itemProp="name">
-                <span className="icon--down" role="img" aria-label="camel emoji">
+                <span role="img" aria-label="camel emoji">
                   🐪
                 </span>{" "}
                 Story{" "}
-                <span className="icon--up" role="img" aria-label="canada flag emoji">
+                <span role="img" aria-label="canada flag emoji">
                   🇨🇦
                 </span>
               </h2>
@@ -452,11 +396,11 @@ class IndexPage extends React.Component {
           </section>
           <section id="projects" className="main__body__section">
             <h2>
-              <span role="img" aria-label="floppy disk emoji" className="icon--down">
+              <span role="img" aria-label="floppy disk emoji">
                 💾
               </span>{" "}
               Projects{" "}
-              <span role="img" aria-label="floppy disk emoji" className="icon--up">
+              <span role="img" aria-label="floppy disk emoji">
                 💾
               </span>
             </h2>
@@ -597,11 +541,11 @@ class IndexPage extends React.Component {
           </section>
           <section className="main__body__section">
             <h2 id="music">
-              <span role="img" aria-label="treble clef and electric guitar emojis" className="icon--down">
+              <span role="img" aria-label="treble clef and electric guitar emojis">
                 🎼 🎸
               </span>{" "}
               Music{" "}
-              <span role="img" aria-label="pint of beer and microphone emojis" className="icon--up">
+              <span role="img" aria-label="pint of beer and microphone emojis">
                 🍺 🎙
               </span>
             </h2>
@@ -663,11 +607,11 @@ class IndexPage extends React.Component {
           </section>
           <section className="main__body__section--content" itemScope itemType="http://www.l0rdcafe.com/Blog">
             <h2 id="blog">
-              <span role="img" aria-label="thinking emoji" className="icon--down">
+              <span role="img" aria-label="thinking emoji">
                 🤔
               </span>{" "}
               Thoughts{" "}
-              <span role="img" aria-label="thinking emoji" className="icon--up">
+              <span role="img" aria-label="thinking emoji">
                 🤔
               </span>
             </h2>

@@ -15,7 +15,7 @@ const FooterWrapper = styled.div`
       color: #fff;
       font-size: 1.25rem;
       letter-spacing: 0.025rem;
-      margin-top: 0;
+      margin: 0;
 
       @media (max-width: 650px) {
         font-size: 1rem;
@@ -38,6 +38,8 @@ const FooterWrapper = styled.div`
     list-style: none;
     display: flex;
     margin: 0;
+    padding-top: 2%;
+    padding-bottom: 0.5%;
 
     @media (max-width: 650px) {
       width: 60%;

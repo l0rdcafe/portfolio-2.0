@@ -20,16 +20,16 @@ import foodmeup from "../assets/foodmeup.png";
 
 const metadata = {
   description:
-    "👑 l0rdcafé 👑 Personal Homepage of Ismail Arafa, Freelance Front End Web Developer and Musician based in Toronto, Canada includes project gallery featuring web apps and projects in a range of topics such as HTML5, JavaScript, jQuery, SASS, Flexbox, CSS4, API integration, ES6 and many others. Website also includes front end related blog posts diving into topics such as open-source contribution, debugging and graphic design for web developers using SketchApp.",
+    "👑 l0rdcafé 👑 Personal Homepage of Ismail Arafa, Freelance Frontend Web Developer based in Toronto, Canada proficient with React, React Native and Vue.js, page includes project gallery featuring web apps and projects in a range of topics such as HTML5, JavaScript, SASS, Flexbox, CSS4, API integration, ES6 and many others. Website also includes front end related blog posts diving into topics such as open-source contribution, debugging and graphic design for web developers using SketchApp.",
   og_type: "website",
   og_title:
-    "👑 l0rdcafé 👑 Personal Homepage of Ismail Arafa, Freelance Front End Web Developer and Musician based in Toronto, Canada 🍁",
+    "👑 l0rdcafé 👑 Personal Homepage of Ismail Arafa, Freelance Frontend Web Developer based in Toronto, Canada 🍁",
   og_description:
-    "👑 l0rdcafé 👑 Personal Homepage of Ismail Arafa, Freelance Front End Web Developer and Musician based in Toronto, Canada includes project gallery featuring web apps and projects in a range of topics such as HTML5, CSS4, ES6 and many others. Website also includes front end related blog posts.",
+    "👑 l0rdcafé 👑 Personal Homepage of Ismail Arafa, Freelance Frontend Web Developer based in Toronto, Canada proficient with React, React Native, and Vue.js, page includes project gallery and blog posts featuring web apps covering opics such as HTML5, CSS4, ES6 and many others.",
   twitter_title:
-    "👑 l0rdcafé 👑 Personal Homepage of Ismail Arafa, Freelance Front End Web Developer and Musician based in Toronto, Canada 🍁",
+    "👑 l0rdcafé 👑 Personal Homepage of Ismail Arafa, Freelance Frontend Web Developer and Musician based in Toronto, Canada 🍁",
   twitter_description:
-    "👑 l0rdcafé 👑 Personal Homepage of Ismail Arafa, Freelance Front End Web Developer based in Toronto, Canada includes projects in a range of topics such as HTML5, CSS4, ES6."
+    "👑 l0rdcafé 👑 Personal Homepage of Ismail Arafa, Freelance Frontend Web Developer based in Toronto, Canada proficient with React, React Native and Vue.js."
 };
 
 const Banner = styled.div`

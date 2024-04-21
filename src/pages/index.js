@@ -29,7 +29,7 @@ const metadata = {
   twitter_title:
     "👑 l0rdcafé 👑 Personal Homepage of Ismail Arafa, Freelance Frontend Web Developer and Musician based in Toronto, Canada 🍁",
   twitter_description:
-    "👑 l0rdcafé 👑 Personal Homepage of Ismail Arafa, Freelance Frontend Web Developer based in Toronto, Canada proficient with React, React Native and Vue.js."
+    "👑 l0rdcafé 👑 Personal Homepage of Ismail Arafa, Freelance Frontend Web Developer based in Toronto, Canada proficient with React, React Native and Vue.js.",
 };
 
 const Banner = styled.div`
@@ -105,12 +105,12 @@ const BannerParagraph = styled.p`
   }
 
   a {
-    color: #ffdc00;
+    color: #ffee80;
     font-weight: 700;
   }
 
   a:hover {
-    color: #ffee80;
+    color: #ffdc00;
   }
 
   small {
@@ -304,12 +304,14 @@ class IndexPage extends React.Component {
       const isSticky = nav.classList.contains("sticky");
       const isHome = window.location.pathname === "/";
       if (top > sticky) {
-        document.querySelector(".main__banner__list__logo").style.display = "block";
+        document.querySelector(".main__banner__list__logo").style.display =
+          "block";
         nav.classList.add("sticky");
         nav.classList.remove("fadeIn");
         nav.className += " animated bounceInLeft";
       } else if (isSticky && isHome) {
-        document.querySelector(".main__banner__list__logo").style.display = "none";
+        document.querySelector(".main__banner__list__logo").style.display =
+          "none";
         nav.classList.remove("sticky");
         nav.classList.remove("bounceInLeft");
         nav.classList.add("fadeIn");
@@ -329,19 +331,32 @@ class IndexPage extends React.Component {
         twitter_description={metadata.twitter_description}
       >
         <Banner>
-          <section className="main__banner" itemScope itemType="http://www.l0rdcafe.com/Person">
+          <section
+            className="main__banner"
+            itemScope
+            itemType="http://www.l0rdcafe.com/Person"
+          >
             <h1 className="main__banner__wrapper animated tada">
               <Link to="/" href="/" role="link" itemProp="url">
                 <span role="img" aria-label="crown emoji" className="crown">
                   👑
                 </span>{" "}
-                <img className="main__banner__wrapper__logo" src={l0rdcafe} alt="l0rdcafe logo" />{" "}
+                <img
+                  className="main__banner__wrapper__logo"
+                  src={l0rdcafe}
+                  alt="l0rdcafe logo"
+                />{" "}
                 <span role="img" aria-label="crown emoji" className="crown">
                   👑
                 </span>
               </Link>
             </h1>
-            <img className="l0rd" src={l0rd} alt="Ismail Arafa in Cairo, Egypt circa 2013" itemProp="photo" />
+            <img
+              className="l0rd"
+              src={l0rd}
+              alt="Ismail Arafa in Cairo, Egypt circa 2013"
+              itemProp="photo"
+            />
             <BannerParagraph>
               <span itemProp="name">Ismail Arafa</span> is a{" "}
               <Link href="/#projects" to="/#projects">
@@ -349,16 +364,22 @@ class IndexPage extends React.Component {
                 <span role="img" aria-label="laptop emoji">
                   💻
                 </span>
-              </Link>,{" "}
+              </Link>
+              ,{" "}
               <Link href="/#music" to="/#music">
                 accomplished musician{" "}
                 <span role="img" aria-label="treble clef emoji">
                   🎼
                 </span>
-              </Link>, and a huge cheese 🧀 fiend.
+              </Link>
+              , and a huge cheese 🧀 fiend.
               <br />
               <small>Based in Toronto, Canada</small>
-              <span className="main__banner__wrapper__span" role="img" aria-label="maple leaf emoji">
+              <span
+                className="main__banner__wrapper__span"
+                role="img"
+                aria-label="maple leaf emoji"
+              >
                 🍁
               </span>
             </BannerParagraph>
@@ -367,7 +388,12 @@ class IndexPage extends React.Component {
         </Banner>
         <Main>
           <section className="main__body" role="main">
-            <article id="intro" className="main__body__section" itemScope itemType="http://www.l0rdcafe.com/Article">
+            <article
+              id="intro"
+              className="main__body__section"
+              itemScope
+              itemType="http://www.l0rdcafe.com/Article"
+            >
               <h2 itemProp="name">
                 <span role="img" aria-label="camel emoji">
                   🐪
@@ -382,15 +408,18 @@ class IndexPage extends React.Component {
                 <a className="l0rd" href="mailto:me@l0rdcafe.com">
                   l0rdcafé
                 </a>{" "}
-                stumbled upon the art of coding one day and, eager to learn more, he traversed the Atlantic Ocean{" "}
+                stumbled upon the art of coding one day and, eager to learn
+                more, he traversed the Atlantic Ocean{" "}
                 <span role="img" aria-label="ocean wave emoji">
                   🌊
                 </span>{" "}
-                through a combination of camel back riding, telekinesis and sheer willpower.
+                through a combination of camel back riding, telekinesis and
+                sheer willpower.
               </p>
               <p>
-                After an arduous and tasking journey, he finally made his way to Canadian shores where he would pursue
-                his passions for melting cheese and crafting a myriad of web creations.
+                After an arduous and tasking journey, he finally made his way to
+                Canadian shores where he would pursue his passions for melting
+                cheese and crafting a myriad of web creations.
               </p>
             </article>
           </section>
@@ -411,10 +440,15 @@ class IndexPage extends React.Component {
               role="group"
             >
               <a href="https://l0rdcafe.github.io/readme/" itemProp="url">
-                <img src={readme} alt="Spotify currently playing track information" itemProp="image" />
+                <img
+                  src={readme}
+                  alt="Spotify currently playing track information"
+                  itemProp="image"
+                />
                 <h4 itemProp="name">Readme</h4>
                 <p itemProp="description">
-                  Spotify OAuth sign in fetching currently playing information and Genius annotations.
+                  Spotify OAuth sign in fetching currently playing information
+                  and Genius annotations.
                 </p>
               </a>
             </figure>
@@ -425,10 +459,15 @@ class IndexPage extends React.Component {
               role="group"
             >
               <a href="https://l0rdcafe.github.io/ubereaucracy/" itemProp="url">
-                <img src={uberpage} alt="Landing page of mock app Ubereaucracy" itemProp="image" />
+                <img
+                  src={uberpage}
+                  alt="Landing page of mock app Ubereaucracy"
+                  itemProp="image"
+                />
                 <h4 itemProp="name">Ubereaucracy</h4>
                 <p itemProp="description">
-                  A design and homepage for making paperwork easier in Egypt. Designed with Sketch App.
+                  A design and homepage for making paperwork easier in Egypt.
+                  Designed with Sketch App.
                 </p>
               </a>
             </figure>
@@ -439,9 +478,15 @@ class IndexPage extends React.Component {
               role="group"
             >
               <a href="https://github.com/l0rdcafe/branch-set/" itemProp="url">
-                <img src={branch} alt="Gif of bash script setting git remote branches" itemProp="image" />
+                <img
+                  src={branch}
+                  alt="Gif of bash script setting git remote branches"
+                  itemProp="image"
+                />
                 <h4 itemProp="name">Branch Set</h4>
-                <p itemProp="description">Update all git remote branches in a directory.</p>
+                <p itemProp="description">
+                  Update all git remote branches in a directory.
+                </p>
               </a>
             </figure>
             <figure
@@ -450,7 +495,10 @@ class IndexPage extends React.Component {
               itemType="http://www.l0rdcafe.com/CreativeWork"
               role="group"
             >
-              <a href="https://github.com/l0rdcafe/async-strategies" itemProp="url">
+              <a
+                href="https://github.com/l0rdcafe/async-strategies"
+                itemProp="url"
+              >
                 <img
                   src={asyncStrats}
                   alt="Command line terminal iTerm2 showing two tasks in series"
@@ -458,7 +506,8 @@ class IndexPage extends React.Component {
                 />
                 <h4 itemProp="name">Async Strategies</h4>
                 <p itemProp="description">
-                  Asynchronous JS strategies using promises, callbacks and async/await in serial and parallel.
+                  Asynchronous JS strategies using promises, callbacks and
+                  async/await in serial and parallel.
                 </p>
               </a>
             </figure>
@@ -469,10 +518,15 @@ class IndexPage extends React.Component {
               role="group"
             >
               <a href="https://khamra.surge.sh/" itemProp="url">
-                <img src={khamra} alt="Map displaying marker for drinks venue" itemProp="image" />
+                <img
+                  src={khamra}
+                  alt="Map displaying marker for drinks venue"
+                  itemProp="image"
+                />
                 <h4 itemProp="name">Khamra</h4>
                 <p itemProp="description">
-                  Foursquare API and Mapbox-GL app finding drinks venues using geolocation and kilometer radius.
+                  Foursquare API and Mapbox-GL app finding drinks venues using
+                  geolocation and kilometer radius.
                 </p>
               </a>
             </figure>
@@ -483,10 +537,15 @@ class IndexPage extends React.Component {
               role="group"
             >
               <a href="https://l0rdcafe.github.io/dad-joke-gen/" itemProp="url">
-                <img src={dadjoke} alt="Dad joke app showing random joke and search field" itemProp="image" />
+                <img
+                  src={dadjoke}
+                  alt="Dad joke app showing random joke and search field"
+                  itemProp="image"
+                />
                 <h4 itemProp="name">Dad Jokez</h4>
                 <p itemProp="description">
-                  Dad joke generator with random button and search field using icanhazdadjoke API.
+                  Dad joke generator with random button and search field using
+                  icanhazdadjoke API.
                 </p>
               </a>
             </figure>
@@ -503,7 +562,10 @@ class IndexPage extends React.Component {
                   itemProp="image"
                 />
                 <h4 itemProp="name">Za7ma</h4>
-                <p itemProp="description">Cairo traffic visualizer using SigmaJS with data from Bey2ollak API.</p>
+                <p itemProp="description">
+                  Cairo traffic visualizer using SigmaJS with data from
+                  Bey2ollak API.
+                </p>
               </a>
             </figure>
             <figure
@@ -513,10 +575,15 @@ class IndexPage extends React.Component {
               role="group"
             >
               <a href="https://github.com/l0rdcafe/cc-ss" itemProp="url">
-                <img src={webpack} alt="Webpack demo showing framework build in iTerm2" itemProp="image" />
+                <img
+                  src={webpack}
+                  alt="Webpack demo showing framework build in iTerm2"
+                  itemProp="image"
+                />
                 <h4 itemProp="name">CC-SS</h4>
                 <p itemProp="description">
-                  CC-SS build setup including custom CSS framework, project templates and webpack config.
+                  CC-SS build setup including custom CSS framework, project
+                  templates and webpack config.
                 </p>
               </a>
             </figure>
@@ -534,14 +601,18 @@ class IndexPage extends React.Component {
                 />
                 <h4 itemProp="name">FoodMeUp</h4>
                 <p itemProp="description">
-                  Ingredient-based recipe search using Edamam API including nutritional facts.
+                  Ingredient-based recipe search using Edamam API including
+                  nutritional facts.
                 </p>
               </a>
             </figure>
           </section>
           <section className="main__body__section">
             <h2 id="music">
-              <span role="img" aria-label="treble clef and electric guitar emojis">
+              <span
+                role="img"
+                aria-label="treble clef and electric guitar emojis"
+              >
                 🎼 🎸
               </span>{" "}
               Music{" "}
@@ -555,7 +626,11 @@ class IndexPage extends React.Component {
                 🎼
               </span>
             </h3>
-            <figure className="main__body__section__fig" itemScope itemType="http://www.l0rdcafe.com/MusicRecording">
+            <figure
+              className="main__body__section__fig"
+              itemScope
+              itemType="http://www.l0rdcafe.com/MusicRecording"
+            >
               <iframe
                 scrolling="no"
                 src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/137851268&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&visual=true"
@@ -571,7 +646,11 @@ class IndexPage extends React.Component {
                 </span>
               </h4>
             </figure>
-            <figure className="main__body__section__fig" itemScope itemType="http://www.l0rdcafe.com/MusicRecording">
+            <figure
+              className="main__body__section__fig"
+              itemScope
+              itemType="http://www.l0rdcafe.com/MusicRecording"
+            >
               <iframe
                 scrolling="no"
                 src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/171710141&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&visual=true"
@@ -587,7 +666,11 @@ class IndexPage extends React.Component {
                 </span>
               </h4>
             </figure>
-            <figure className="main__body__section__fig" itemScope itemType="http://www.l0rdcafe.com/MusicRecording">
+            <figure
+              className="main__body__section__fig"
+              itemScope
+              itemType="http://www.l0rdcafe.com/MusicRecording"
+            >
               <iframe
                 scrolling="no"
                 src="https://www.youtube.com/embed/xNztF5wGrT8"
@@ -605,7 +688,11 @@ class IndexPage extends React.Component {
               </h4>
             </figure>
           </section>
-          <section className="main__body__section--content" itemScope itemType="http://www.l0rdcafe.com/Blog">
+          <section
+            className="main__body__section--content"
+            itemScope
+            itemType="http://www.l0rdcafe.com/Blog"
+          >
             <h2 id="blog">
               <span role="img" aria-label="thinking emoji">
                 🤔
@@ -615,10 +702,15 @@ class IndexPage extends React.Component {
                 🤔
               </span>
             </h2>
-            {data.allMarkdownRemark.edges.reverse().map(post => (
+            {data.allMarkdownRemark.edges.reverse().map((post) => (
               <React.Fragment key={post.node.frontmatter.date}>
                 <h3 itemProp="name" role="listitem">
-                  <Link to={post.node.frontmatter.path} href={post.node.frontmatter.path} itemProp="url" role="link">
+                  <Link
+                    to={post.node.frontmatter.path}
+                    href={post.node.frontmatter.path}
+                    itemProp="url"
+                    role="link"
+                  >
                     <span role="img" aria-label="thought bubble emoji">
                       💭
                     </span>{" "}
@@ -628,7 +720,9 @@ class IndexPage extends React.Component {
                     </span>
                   </Link>
                 </h3>
-                <small itemProp="datePublished">{convertDate(post.node.frontmatter.date)}</small>
+                <small itemProp="datePublished">
+                  {convertDate(post.node.frontmatter.date)}
+                </small>
               </React.Fragment>
             ))}
           </section>
@@ -648,13 +742,13 @@ IndexPage.propTypes = {
             frontmatter: PropTypes.shape({
               path: PropTypes.string,
               title: PropTypes.string,
-              date: PropTypes.string
-            })
-          })
+              date: PropTypes.string,
+            }),
+          }),
         })
-      )
-    })
-  }).isRequired
+      ),
+    }),
+  }).isRequired,
 };
 
 export const pageQuery = graphql`
